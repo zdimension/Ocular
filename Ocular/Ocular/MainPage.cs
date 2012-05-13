@@ -18,7 +18,7 @@ namespace Ocular
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 frm = (Form1)Application.OpenForms[0];
+            Working frm = (Working)Application.OpenForms[0];
             frm.NewProject();
         }
     }

@@ -13,3 +13,5 @@ C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular\obj\x86\Debug\Ocular.Pr
 C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular\bin\Debug\FastColoredTextBox.dll
 C:\Users\lam.000\Documents\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
 C:\Users\lam.000\Documents\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
+C:\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
+C:\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9EC69A93-D337-486C-8FE6-CB526D095B45}</ProjectGuid>
+    <ProjectGuid>{1ACBC0B6-1DE0-46C6-ABBA-1E70D6F5FAAA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ocular</RootNamespace>
-    <AssemblyName>Ocular</AssemblyName>
+    <RootNamespace>RelevantDesign</RootNamespace>
+    <AssemblyName>RelevantDesign</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -34,12 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FastColoredTextBox">
-      <HintPath>..\..\..\..\FCTB\FastColoredTextBox.dll</HintPath>
-    </Reference>
-    <Reference Include="MdiTabControl">
-      <HintPath>..\..\..\MDITabControl\MdiTabControl.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,36 +45,19 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Transitions">
-      <HintPath>..\..\..\Transitions\Transitions.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainPage.cs">
+    <Compile Include="Ocular.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainPage.Designer.cs">
-      <DependentUpon>MainPage.cs</DependentUpon>
+    <Compile Include="Ocular.Designer.cs">
+      <DependentUpon>Ocular.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProjectPage.Designer.cs">
-      <DependentUpon>ProjectPage.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Working.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Working.Designer.cs">
-      <DependentUpon>Working.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="MainPage.resx">
-      <DependentUpon>MainPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProjectPage.resx">
-      <DependentUpon>ProjectPage.cs</DependentUpon>
+    <EmbeddedResource Include="Ocular.resx">
+      <DependentUpon>Ocular.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,9 +68,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Working.resx">
-      <DependentUpon>Working.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

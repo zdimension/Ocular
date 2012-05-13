@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace Ocular
+namespace RelevantDesign
 {
     static class Program
     {
@@ -15,7 +15,7 @@ namespace Ocular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Working());
+            Application.Run(new Ocular());
         }
     }
 }
