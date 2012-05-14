@@ -1,2 +1,2 @@
-This is Ocular's Git repository! There's not been any code submitted yet, since we're still in the planning stage. Thanks!
--Aurora
+This is Ocular's Git repository! Please submit your code here. Thanks!
+-Aurora and CowboyNick
