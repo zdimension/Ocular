@@ -15,3 +15,14 @@ C:\Users\lam.000\Documents\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
 C:\Users\lam.000\Documents\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
 C:\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
 C:\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.pdb
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.MainPage.resources
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.ProjectPage.resources
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Properties.Resources.resources
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Working.resources
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\cowboy\Documents\Visual Studio 2010\Projects\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\GenerateResource.write.1.tlog

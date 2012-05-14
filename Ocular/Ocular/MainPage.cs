@@ -15,11 +15,13 @@ namespace Ocular
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+      
+        private void label1_Click(object sender, EventArgs e)
+            ///This code is used to create a new project form
         {
             Working frm = (Working)Application.OpenForms[0];
-            frm.NewProject();
+            frm.NewProject();       
+
         }
     }
 }
