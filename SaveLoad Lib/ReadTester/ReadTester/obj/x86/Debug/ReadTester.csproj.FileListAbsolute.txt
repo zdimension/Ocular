@@ -1,0 +1,11 @@
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\bin\Debug\ReadTester.exe
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\bin\Debug\ReadTester.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\bin\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\bin\Debug\tar-cs.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\bin\Debug\Ocular File Management Library.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.csprojResolveAssemblyReference.cache
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.Form1.resources
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.Properties.Resources.resources
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.csproj.GenerateResource.Cache
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.exe
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\ReadTester\ReadTester\obj\x86\Debug\ReadTester.pdb

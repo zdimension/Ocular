@@ -22,3 +22,6 @@ C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocu
 C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.Dialogs.BrightnessHelp.resources
 C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.Dialogs.WhatsNew.resources
 C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.NewProject.resources
+C:\Users\lam.000\Documents\Ocular\ocular\MaxwillyGUI\Ocular\bin\Debug\Ocular.exe.config
+C:\Users\lam.000\Documents\Ocular\ocular\MaxwillyGUI\Ocular\obj\Debug\Ocular.exe
+C:\Users\lam.000\Documents\Ocular\ocular\MaxwillyGUI\Ocular\obj\Debug\Ocular.pdb

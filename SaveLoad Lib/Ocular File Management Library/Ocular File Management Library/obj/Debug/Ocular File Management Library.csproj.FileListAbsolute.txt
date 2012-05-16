@@ -1,0 +1,12 @@
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\obj\Debug\Ocular File Management Library.csprojResolveAssemblyReference.cache
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\bin\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\bin\Debug\Ocular File Management Library.pdb
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\bin\Debug\tar-cs.dll
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\obj\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\AppData\Local\Temporary Projects\Ocular File Management Library\obj\Debug\Ocular File Management Library.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\bin\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\bin\Debug\Ocular File Management Library.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\bin\Debug\tar-cs.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\obj\Debug\Ocular File Management Library.csprojResolveAssemblyReference.cache
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\obj\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\Ocular File Management Library\Ocular File Management Library\obj\Debug\Ocular File Management Library.pdb

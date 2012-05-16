@@ -56,7 +56,7 @@
             this.MainDocControl.Location = new System.Drawing.Point(0, 50);
             this.MainDocControl.MenuRenderer = null;
             this.MainDocControl.Name = "MainDocControl";
-            this.MainDocControl.Size = new System.Drawing.Size(1000, 750);
+            this.MainDocControl.Size = new System.Drawing.Size(1000, 738);
             this.MainDocControl.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.MainDocControl.TabBackHighColor = System.Drawing.Color.White;
             this.MainDocControl.TabBackHighColorDisabled = System.Drawing.Color.White;
@@ -83,17 +83,17 @@
             this.MainDocControl.TopSeparator = false;
             this.MainDocControl.TabIndexChanged += new System.EventHandler(this.MainDocControl_TabIndexChanged);
             // 
-            // Ocular
+            // OcularMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1000, 800);
+            this.ClientSize = new System.Drawing.Size(1000, 788);
             this.Controls.Add(this.MainDocControl);
             this.Controls.Add(this.TopBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "Ocular";
+            this.Name = "OcularMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Ocular_Load);

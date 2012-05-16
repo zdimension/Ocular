@@ -113,7 +113,7 @@
             this.CreditsLabel.ForeColor = System.Drawing.Color.Gray;
             this.CreditsLabel.Location = new System.Drawing.Point(1, 1);
             this.CreditsLabel.Name = "CreditsLabel";
-            this.CreditsLabel.Size = new System.Drawing.Size(151, 59);
+            this.CreditsLabel.Size = new System.Drawing.Size(150, 59);
             this.CreditsLabel.TabIndex = 9;
             this.CreditsLabel.Text = "Credits";
             // 
@@ -218,9 +218,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(20, 165);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.Size = new System.Drawing.Size(113, 13);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Maxwilly";
+            this.label6.Text = "Aurora01 and Maxwilly";
             // 
             // PluginSystemLabel
             // 

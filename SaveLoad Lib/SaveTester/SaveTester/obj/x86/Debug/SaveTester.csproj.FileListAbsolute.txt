@@ -1,0 +1,22 @@
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\bin\Debug\SaveTester.exe
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\bin\Debug\SaveTester.pdb
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\bin\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\bin\Debug\tar-cs.dll
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\bin\Debug\Ocular File Management Library.pdb
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.csprojResolveAssemblyReference.cache
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.Form1.resources
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.Properties.Resources.resources
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.csproj.GenerateResource.Cache
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.exe
+C:\Users\lam.000\AppData\Local\Temporary Projects\SaveTester\obj\x86\Debug\SaveTester.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.exe
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.csprojResolveAssemblyReference.cache
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.Form1.resources
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.Properties.Resources.resources
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\obj\x86\Debug\SaveTester.csproj.GenerateResource.Cache
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\bin\Debug\SaveTester.exe
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\bin\Debug\SaveTester.pdb
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\bin\Debug\Ocular File Management Library.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\bin\Debug\tar-cs.dll
+C:\Users\lam.000\Documents\Ocular\ocular\SaveLoad Lib\SaveTester\SaveTester\bin\Debug\Ocular File Management Library.pdb
