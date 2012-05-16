@@ -17,3 +17,8 @@ C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\Ocular\bin\Debug\Tra
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\Ocular\bin\Debug\Ocular.exe.config
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.PlainButton.resources
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.OcularMain.resources
+C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.TestForm.resources
+C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.Dialogs.Credits.resources
+C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.Dialogs.BrightnessHelp.resources
+C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.Dialogs.WhatsNew.resources
+C:\Users\cameron\documents\visual studio 11\Projects\Ocular\Ocular\obj\Debug\Ocular.NewProject.resources

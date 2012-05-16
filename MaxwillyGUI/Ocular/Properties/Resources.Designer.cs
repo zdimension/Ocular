@@ -102,9 +102,9 @@ namespace Ocular.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap StartWindow1 {
+        internal static System.Drawing.Bitmap StartWindow {
             get {
-                object obj = ResourceManager.GetObject("StartWindow1", resourceCulture);
+                object obj = ResourceManager.GetObject("StartWindow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

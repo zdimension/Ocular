@@ -1,0 +1,17 @@
+0.2============
+*Added start page fade in and out.
+*Added InvokeOnClick methods to PlainButton control where needed.
+*Added directory creation to store websites, snippets, plugins, etc.
+*Organised solution files into separate folders.
+*Added RAM optimisation.
+*Turned 'Credits' and 'What's New' labels into functional buttons with animations.
+*Added credits, what's new and new project dialogs.
+*Changed opacity of start page to 0.9 for a slight visual effect.
+*Changed icons on PlainButtons on start page to have a white glow (instead of black).
+*Added OcButton to main solution.
+*Added close/minimise buttons to start page.
+
+0.1============
+*Created start page GUI.
+*Added all relevant files to 'Graphics' folder.
+*Created PlainButton control for start page.

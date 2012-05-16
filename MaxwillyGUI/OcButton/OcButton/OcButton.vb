@@ -44,7 +44,7 @@ Imports System.ComponentModel
             CreateGraphics.DrawLine(Pens.Silver, Width - 1, 0, Width - 1, Height)
             Dim TextPen As New SolidBrush(ForeColor)
             Dim stringFormat As New StringFormat() With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-            Dim R As New Rectangle(Location, Size)
+            Dim R As New Rectangle(New Point(0, 0), ClientRectangle.Size)
             CreateGraphics.DrawString(ButtonT, Font, TextPen, R, stringFormat)
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -76,7 +76,7 @@ Imports System.ComponentModel
             CreateGraphics.DrawLine(Pens.Silver, Width - 1, 0, Width - 1, Height)
             Dim TextPen As New SolidBrush(ForeColor)
             Dim stringFormat As New StringFormat() With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-            Dim R As New Rectangle(Location, Size)
+            Dim R As New Rectangle(New Point(0, 0), ClientRectangle.Size)
             CreateGraphics.DrawString(ButtonT, Font, TextPen, R, stringFormat)
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -93,7 +93,7 @@ Imports System.ComponentModel
             CreateGraphics.DrawLine(Pens.Silver, Width - 1, 0, Width - 1, Height)
             Dim TextPen As New SolidBrush(ForeColor)
             Dim stringFormat As New StringFormat() With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-            Dim R As New Rectangle(Location, Size)
+            Dim R As New Rectangle(New Point(0, 0), ClientRectangle.Size)
             CreateGraphics.DrawString(ButtonT, Font, TextPen, R, stringFormat)
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -110,7 +110,7 @@ Imports System.ComponentModel
             CreateGraphics.DrawLine(Pens.Silver, Width - 1, 0, Width - 1, Height)
             Dim TextPen As New SolidBrush(ForeColor)
             Dim stringFormat As New StringFormat() With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-            Dim R As New Rectangle(Location, Size)
+            Dim R As New Rectangle(New Point(0, 0), ClientRectangle.Size)
             CreateGraphics.DrawString(ButtonT, Font, TextPen, R, stringFormat)
         Catch ex As Exception
             Debug.Print(ex.Message)
@@ -132,7 +132,7 @@ Imports System.ComponentModel
             CreateGraphics.DrawLine(Pens.Silver, Width - 1, 0, Width - 1, Height)
             Dim TextPen As New SolidBrush(ForeColor)
             Dim stringFormat As New StringFormat() With {.Alignment = StringAlignment.Center, .LineAlignment = StringAlignment.Center}
-            Dim R As New Rectangle(Location, Size)
+            Dim R As New Rectangle(New Point(0, 0), ClientRectangle.Size)
             CreateGraphics.DrawString(ButtonT, Font, TextPen, R, stringFormat)
         Catch ex As Exception
             Debug.Print(ex.Message)
