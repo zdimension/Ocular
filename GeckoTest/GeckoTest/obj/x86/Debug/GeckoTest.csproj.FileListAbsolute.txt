@@ -1,0 +1,13 @@
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\bin\Debug\GeckoTest.exe
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\bin\Debug\GeckoTest.pdb
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\bin\Debug\Villanova.dll
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\bin\Debug\Villanova.pdb
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.Form1.resources
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.Properties.Resources.resources
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.exe
+d:\lab\c#\GeckoTest\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.pdb
+D:\Lab\OSrc\ocular\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.exe
+D:\Lab\OSrc\ocular\GeckoTest\GeckoTest\obj\x86\Debug\GeckoTest.pdb
