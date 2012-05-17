@@ -160,11 +160,11 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(CreditsLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(200));
+                Transition.run(CreditsLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(CreditsLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(200));
+                Transition.run(CreditsLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(500));
             }
         }
 
@@ -172,11 +172,11 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(CreditsLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(200));
+                Transition.run(CreditsLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(CreditsLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(200));
+                Transition.run(CreditsLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(500));
             }
         }
 
@@ -184,11 +184,11 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(WhatsNewLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(200));
+                Transition.run(WhatsNewLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(WhatsNewLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(200));
+                Transition.run(WhatsNewLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(500));
             }
         }
 
@@ -196,19 +196,26 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(WhatsNewLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(200));
+                Transition.run(WhatsNewLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(WhatsNewLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(200));
+                Transition.run(WhatsNewLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(500));
             }
         }
 
         private void NewProjectButton_Click(object sender, EventArgs e)
         {
             NewProject NP = new NewProject();
-            NP.ShowDialog();
-            this.CloseWindow();
+            DialogResult result = NP.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                this.CloseWindow();
+            }
+            else if (result == System.Windows.Forms.DialogResult.Cancel)
+            {
+                //Do nothing
+            }
         }
 
         private void CreateDirectories_DoWork(object sender, DoWorkEventArgs e)
@@ -230,11 +237,11 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(BrightnessHelpLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(200));
+                Transition.run(BrightnessHelpLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(BrightnessHelpLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(200));
+                Transition.run(BrightnessHelpLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(500));
             }
         }
 
@@ -242,11 +249,11 @@ namespace Ocular
         {
             if (BrightnessTrackBar.Value < 75)
             {
-                Transition.run(BrightnessHelpLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(200));
+                Transition.run(BrightnessHelpLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(500));
             }
             else
             {
-                Transition.run(BrightnessHelpLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(200));
+                Transition.run(BrightnessHelpLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(500));
             }
         }
 
@@ -268,7 +275,12 @@ namespace Ocular
             if (this.Opacity.Equals(0))
             {
                 this.Close();
+            }
         }
+
+        private void BrightnessTrackBar_Scroll(object sender, EventArgs e)
+        {
+
         }
     }
 }

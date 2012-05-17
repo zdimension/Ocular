@@ -90,5 +90,38 @@ namespace Ocular
             //Consistently minimises RAM usage.
             MinimizeFootprint();
         }
+
+        private void SelectLocationButton_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SelectLocationButton_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.AddExtension = true;
+            sfd.Filter = "Ocular Project (*.ocproj) | All files (*.*)";
+            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                ProjectLocationBox.Text = sfd.FileName;
+            }
+        }
+
+        private void OKButton_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Close();
+        }
     }
 }
