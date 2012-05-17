@@ -131,6 +131,8 @@
 *Changed opacity of start page to 0.9 for a slight visual effect.
 *Changed icons on PlainButtons on start page to have a white glow (instead of black).
 *Added OcButton to main solution.
-*Added close/minimise buttons to start page.</value>
+*Added close/minimise buttons to start page.
+* Fixed the Credits dialog to the correct users.
+* Added more features to the new project dialog.</value>
   </data>
 </root>

@@ -101,6 +101,7 @@
             this.BrightnessTrackBar.TabIndex = 5;
             this.BrightnessTrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
             this.BrightnessTrackBar.Value = 255;
+            this.BrightnessTrackBar.Scroll += new System.EventHandler(this.BrightnessTrackBar_Scroll);
             this.BrightnessTrackBar.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BrightnessTrackBar_MouseUp);
             // 
             // BrightnessLabel
@@ -118,9 +119,9 @@
             // 
             // GetStartedGroup
             // 
-            this.GetStartedGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GetStartedGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.GetStartedGroup.BackColor = System.Drawing.Color.Transparent;
             this.GetStartedGroup.Controls.Add(this.NewCSSFileButton);
             this.GetStartedGroup.Controls.Add(this.NewHTMLFileButton);
@@ -178,8 +179,8 @@
             // 
             // RecentProjectsGroup
             // 
-            this.RecentProjectsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.RecentProjectsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.RecentProjectsGroup.BackColor = System.Drawing.Color.Transparent;
             this.RecentProjectsGroup.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecentProjectsGroup.ForeColor = System.Drawing.Color.Gray;

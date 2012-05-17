@@ -38,8 +38,10 @@
             this.MinFootprint = new System.Windows.Forms.Timer(this.components);
             this.NewProjectLabel = new System.Windows.Forms.Label();
             this.ProjectNameField = new System.Windows.Forms.TextBox();
-            this.ProjectDirectory = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.SelectLocationButton = new OcButton.OcButton();
+            this.ProjectLocationBox = new System.Windows.Forms.TextBox();
+            this.OKButton = new OcButton.OcButton();
+            this.CancelButton = new OcButton.OcButton();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,32 +113,61 @@
             // 
             this.ProjectNameField.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProjectNameField.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectNameField.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ProjectNameField.Location = new System.Drawing.Point(12, 111);
             this.ProjectNameField.Name = "ProjectNameField";
             this.ProjectNameField.Size = new System.Drawing.Size(576, 43);
             this.ProjectNameField.TabIndex = 6;
             this.ProjectNameField.Text = "Project Name";
             // 
-            // ProjectDirectory
+            // SelectLocationButton
             // 
-            this.ProjectDirectory.AutoSize = true;
-            this.ProjectDirectory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProjectDirectory.ForeColor = System.Drawing.Color.Gray;
-            this.ProjectDirectory.Location = new System.Drawing.Point(23, 151);
-            this.ProjectDirectory.Name = "ProjectDirectory";
-            this.ProjectDirectory.Size = new System.Drawing.Size(390, 21);
-            this.ProjectDirectory.TabIndex = 7;
-            this.ProjectDirectory.Text = "C:\\Users\\Me\\Documents\\Ocular\\Projects\\ProjectName";
+            this.SelectLocationButton.BackColor = System.Drawing.Color.White;
+            this.SelectLocationButton.ButtonText = "SELECT";
+            this.SelectLocationButton.ForceUppercase = true;
+            this.SelectLocationButton.ForeColor = System.Drawing.Color.Gray;
+            this.SelectLocationButton.Location = new System.Drawing.Point(488, 170);
+            this.SelectLocationButton.Name = "SelectLocationButton";
+            this.SelectLocationButton.Size = new System.Drawing.Size(100, 43);
+            this.SelectLocationButton.TabIndex = 8;
+            this.SelectLocationButton.Load += new System.EventHandler(this.SelectLocationButton_Load);
+            this.SelectLocationButton.Click += new System.EventHandler(this.SelectLocationButton_Click);
             // 
-            // label1
+            // ProjectLocationBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(209, 308);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Will add more to this tomorrow.";
+            this.ProjectLocationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProjectLocationBox.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProjectLocationBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ProjectLocationBox.Location = new System.Drawing.Point(12, 170);
+            this.ProjectLocationBox.Name = "ProjectLocationBox";
+            this.ProjectLocationBox.Size = new System.Drawing.Size(469, 43);
+            this.ProjectLocationBox.TabIndex = 9;
+            this.ProjectLocationBox.Text = "Location";
+            // 
+            // OKButton
+            // 
+            this.OKButton.BackColor = System.Drawing.Color.White;
+            this.OKButton.ButtonText = "OK";
+            this.OKButton.ForceUppercase = true;
+            this.OKButton.ForeColor = System.Drawing.Color.Gray;
+            this.OKButton.Location = new System.Drawing.Point(488, 345);
+            this.OKButton.Name = "OKButton";
+            this.OKButton.Size = new System.Drawing.Size(100, 43);
+            this.OKButton.TabIndex = 10;
+            this.OKButton.Load += new System.EventHandler(this.OKButton_Load);
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.White;
+            this.CancelButton.ButtonText = "CANCEL";
+            this.CancelButton.ForceUppercase = true;
+            this.CancelButton.ForeColor = System.Drawing.Color.Gray;
+            this.CancelButton.Location = new System.Drawing.Point(12, 345);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(100, 43);
+            this.CancelButton.TabIndex = 11;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NewProject
             // 
@@ -146,7 +177,10 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 400);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CancelButton);
+            this.Controls.Add(this.OKButton);
+            this.Controls.Add(this.ProjectLocationBox);
+            this.Controls.Add(this.SelectLocationButton);
             this.Controls.Add(this.ProjectNameField);
             this.Controls.Add(this.NewProjectLabel);
             this.Controls.Add(this.panel4);
@@ -154,7 +188,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LogoBox);
-            this.Controls.Add(this.ProjectDirectory);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewProject";
@@ -178,7 +211,9 @@
         private System.Windows.Forms.Timer MinFootprint;
         private System.Windows.Forms.Label NewProjectLabel;
         private System.Windows.Forms.TextBox ProjectNameField;
-        private System.Windows.Forms.Label ProjectDirectory;
-        private System.Windows.Forms.Label label1;
+        private OcButton.OcButton SelectLocationButton;
+        private System.Windows.Forms.TextBox ProjectLocationBox;
+        private OcButton.OcButton OKButton;
+        private OcButton.OcButton CancelButton;
     }
 }

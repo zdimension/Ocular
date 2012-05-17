@@ -58,14 +58,14 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1, 299);
+            this.panel3.Size = new System.Drawing.Size(1, 313);
             this.panel3.TabIndex = 7;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.ForestGreen;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 299);
+            this.panel2.Location = new System.Drawing.Point(0, 313);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(499, 1);
             this.panel2.TabIndex = 6;
@@ -76,7 +76,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(499, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1, 300);
+            this.panel1.Size = new System.Drawing.Size(1, 314);
             this.panel1.TabIndex = 5;
             // 
             // CreditsLabel
@@ -87,7 +87,7 @@
             this.CreditsLabel.ForeColor = System.Drawing.Color.Gray;
             this.CreditsLabel.Location = new System.Drawing.Point(1, 1);
             this.CreditsLabel.Name = "CreditsLabel";
-            this.CreditsLabel.Size = new System.Drawing.Size(239, 59);
+            this.CreditsLabel.Size = new System.Drawing.Size(237, 59);
             this.CreditsLabel.TabIndex = 9;
             this.CreditsLabel.Text = "What\'s New";
             // 
@@ -97,7 +97,7 @@
             this.DoneButton.ButtonText = "DONE";
             this.DoneButton.ForceUppercase = true;
             this.DoneButton.ForeColor = System.Drawing.Color.Gray;
-            this.DoneButton.Location = new System.Drawing.Point(408, 264);
+            this.DoneButton.Location = new System.Drawing.Point(408, 277);
             this.DoneButton.Name = "DoneButton";
             this.DoneButton.Size = new System.Drawing.Size(80, 25);
             this.DoneButton.TabIndex = 10;
@@ -109,7 +109,7 @@
             this.CodePlexButton.ButtonText = "CODEPLEX";
             this.CodePlexButton.ForceUppercase = true;
             this.CodePlexButton.ForeColor = System.Drawing.Color.Gray;
-            this.CodePlexButton.Location = new System.Drawing.Point(12, 264);
+            this.CodePlexButton.Location = new System.Drawing.Point(12, 277);
             this.CodePlexButton.Name = "CodePlexButton";
             this.CodePlexButton.Size = new System.Drawing.Size(80, 25);
             this.CodePlexButton.TabIndex = 11;
@@ -138,9 +138,10 @@
             this.label2.ForeColor = System.Drawing.Color.Gray;
             this.label2.Location = new System.Drawing.Point(20, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(468, 160);
+            this.label2.Size = new System.Drawing.Size(468, 173);
             this.label2.TabIndex = 13;
             this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // SeeOurCodePlexLabel
             // 
@@ -148,7 +149,7 @@
             this.SeeOurCodePlexLabel.BackColor = System.Drawing.Color.Transparent;
             this.SeeOurCodePlexLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SeeOurCodePlexLabel.ForeColor = System.Drawing.Color.Gray;
-            this.SeeOurCodePlexLabel.Location = new System.Drawing.Point(95, 270);
+            this.SeeOurCodePlexLabel.Location = new System.Drawing.Point(98, 289);
             this.SeeOurCodePlexLabel.Name = "SeeOurCodePlexLabel";
             this.SeeOurCodePlexLabel.Size = new System.Drawing.Size(266, 13);
             this.SeeOurCodePlexLabel.TabIndex = 32;
@@ -161,7 +162,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Ocular.Properties.Resources.StartWindow;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(500, 300);
+            this.ClientSize = new System.Drawing.Size(500, 314);
             this.Controls.Add(this.SeeOurCodePlexLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.UITeamLabel);
