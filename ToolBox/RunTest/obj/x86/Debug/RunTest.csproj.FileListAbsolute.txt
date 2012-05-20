@@ -1,0 +1,9 @@
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\RunTest.exe
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\RunTest.pdb
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\ToolBox.dll
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\ToolBoxItemTest.dll
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\ToolBoxItemTest.pdb
+C:\Ocular\ocular\ToolBox\RunTest\bin\Debug\ToolBox.pdb
+C:\Ocular\ocular\ToolBox\RunTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Ocular\ocular\ToolBox\RunTest\obj\x86\Debug\RunTest.exe
+C:\Ocular\ocular\ToolBox\RunTest\obj\x86\Debug\RunTest.pdb

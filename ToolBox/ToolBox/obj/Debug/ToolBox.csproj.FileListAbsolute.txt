@@ -1,0 +1,8 @@
+C:\Ocular\ocular\ToolBox\ToolBox\bin\Debug\ToolBox.dll
+C:\Ocular\ocular\ToolBox\ToolBox\bin\Debug\ToolBox.pdb
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\ResolveAssemblyReference.cache
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\ToolBox.Properties.Resources.resources
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\GenerateResource.read.1.tlog
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\GenerateResource.write.1.tlog
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\ToolBox.dll
+C:\Ocular\ocular\ToolBox\ToolBox\obj\Debug\ToolBox.pdb

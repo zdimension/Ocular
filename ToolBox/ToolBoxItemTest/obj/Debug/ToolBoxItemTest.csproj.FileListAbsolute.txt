@@ -1,0 +1,7 @@
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\bin\Debug\ToolBoxItemTest.dll
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\bin\Debug\ToolBoxItemTest.pdb
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\bin\Debug\ToolBox.dll
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\bin\Debug\ToolBox.pdb
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\obj\Debug\ToolBoxItemTest.dll
+C:\Ocular\ocular\ToolBox\ToolBoxItemTest\obj\Debug\ToolBoxItemTest.pdb
