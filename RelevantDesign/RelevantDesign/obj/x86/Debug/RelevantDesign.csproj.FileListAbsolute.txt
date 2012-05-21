@@ -1,9 +1,0 @@
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\bin\Debug\RelevantDesign.exe
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\bin\Debug\RelevantDesign.pdb
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\RelevantDesign.Ocular.resources
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\RelevantDesign.Properties.Resources.resources
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\RelevantDesign.exe
-C:\Ocular\ocular\RelevantDesign\RelevantDesign\obj\x86\Debug\RelevantDesign.pdb
