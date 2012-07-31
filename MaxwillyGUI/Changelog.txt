@@ -1,4 +1,15 @@
-0.2============
+0.1.2============                         Contributors: Aurora01
+*Added exit button to start page and animated them.
+*Fixed a problem where the text would be white in a white text box at some colours.
+*Changed window title of StartWindow.cs from StartWindow to Ocular Start Page.
+*Added the Notif notification system.
+*Cleaned up some unnecessary code.
+*Changed version 0.2 to 0.1.1 and 0.3 to 0.1.2 for slower release schedules (we don't want to be at 0.10 without much functioning :D)
+*Added shadow effect to main window.
+*Added semi-functioning close button to window.
+*Added the CustomForm class, which makes custom forms draggable.
+
+0.1.1============            Contributors: Aurora01 and Maxwilly
 *Added start page fade in and out.
 *Added InvokeOnClick methods to PlainButton control where needed.
 *Added directory creation to store websites, snippets, plugins, etc.
@@ -11,7 +22,7 @@
 *Added OcButton to main solution.
 *Added close/minimise buttons to start page.
 
-0.1============
+0.1============                           Contributors: Maxwilly
 *Created start page GUI.
 *Added all relevant files to 'Graphics' folder.
 *Created PlainButton control for start page.

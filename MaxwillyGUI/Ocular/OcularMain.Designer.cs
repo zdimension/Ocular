@@ -28,18 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OcularMain));
             this.TopBar = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MainDocControl = new MdiTabControl.TabControl();
+            this.CloseButton = new System.Windows.Forms.Label();
+            this.TopBar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // TopBar
             // 
             this.TopBar.BackColor = System.Drawing.Color.White;
+            this.TopBar.Controls.Add(this.panel1);
             this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopBar.Location = new System.Drawing.Point(0, 0);
             this.TopBar.Name = "TopBar";
-            this.TopBar.Size = new System.Drawing.Size(1000, 50);
+            this.TopBar.Size = new System.Drawing.Size(1000, 60);
             this.TopBar.TabIndex = 0;
+            this.TopBar.Paint += new System.Windows.Forms.PaintEventHandler(this.TopBar_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.CloseButton);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1000, 21);
+            this.panel1.TabIndex = 1;
             // 
             // MainDocControl
             // 
@@ -53,10 +72,10 @@
             this.MainDocControl.ControlButtonBorderColor = System.Drawing.Color.DarkGray;
             this.MainDocControl.ControlButtonForeColor = System.Drawing.Color.Black;
             this.MainDocControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainDocControl.Location = new System.Drawing.Point(0, 50);
+            this.MainDocControl.Location = new System.Drawing.Point(0, 60);
             this.MainDocControl.MenuRenderer = null;
             this.MainDocControl.Name = "MainDocControl";
-            this.MainDocControl.Size = new System.Drawing.Size(1000, 738);
+            this.MainDocControl.Size = new System.Drawing.Size(1000, 660);
             this.MainDocControl.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.MainDocControl.TabBackHighColor = System.Drawing.Color.White;
             this.MainDocControl.TabBackHighColorDisabled = System.Drawing.Color.White;
@@ -81,22 +100,42 @@
             this.MainDocControl.TabMaximumWidth = 150;
             this.MainDocControl.TabMinimumWidth = 150;
             this.MainDocControl.TopSeparator = false;
+            this.MainDocControl.Load += new System.EventHandler(this.MainDocControl_Load);
             this.MainDocControl.TabIndexChanged += new System.EventHandler(this.MainDocControl_TabIndexChanged);
+            this.MainDocControl.Paint += new System.Windows.Forms.PaintEventHandler(this.MainDocControl_Paint);
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseButton.ForeColor = System.Drawing.Color.Gray;
+            this.CloseButton.Location = new System.Drawing.Point(981, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(19, 21);
+            this.CloseButton.TabIndex = 0;
+            this.CloseButton.Text = "X";
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
+            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
             // 
             // OcularMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1000, 788);
+            this.ClientSize = new System.Drawing.Size(1000, 720);
             this.Controls.Add(this.MainDocControl);
             this.Controls.Add(this.TopBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "OcularMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Ocular_Load);
+            this.TopBar.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -105,6 +144,8 @@
 
         private System.Windows.Forms.Panel TopBar;
         private MdiTabControl.TabControl MainDocControl;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label CloseButton;
     }
 }
 

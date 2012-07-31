@@ -52,52 +52,63 @@ namespace Ocular
             Transition.run(this, "Opacity", 0.0, new TransitionType_EaseInEaseOut(600));
             CloseTimer.Enabled = true;
         }
-
+        public void HideWindow()
+        {
+            Transition.run(this, "Opacity", 0.0, new TransitionType_EaseInEaseOut(600));
+            HideTimer.Enabled = true;
+        }
         private void StartWindow_Load(object sender, EventArgs e)
         {
-            //Animates form.
-            Transition.run(this, "Opacity", 0.9,new TransitionType_EaseInEaseOut(1000));
-            //Draws drop shadow using DWM.
-            if (DwmIsCompositionEnabled())
+            try
             {
-                int val = 2;
-                DwmSetWindowAttribute(this.Handle, 2, ref val, 4);
-                MARGINS m = new MARGINS();
-                m.Left = 1;
-                m.Right = 0;
-                m.Bottom = 0;
-                m.Top = 1;
-                DwmExtendFrameIntoClientArea(this.Handle, ref m);
-            }
-            //Loads saved brightness and changes controls as necessary.
-            BrightnessTrackBar.Value = Properties.Settings.Default.Brightness;
-            this.BackColor = Color.FromArgb(255, Properties.Settings.Default.Brightness, Properties.Settings.Default.Brightness, Properties.Settings.Default.Brightness);
-            foreach (Control Control in this.Controls)
-            {
-                try
+                //Animates form.
+                Transition.run(this, "Opacity", 0.9, new TransitionType_EaseInEaseOut(1000));
+                //Draws drop shadow using DWM.
+                if (DwmIsCompositionEnabled())
                 {
-                    if (BrightnessTrackBar.Value < 75)
-                    {
-                        Control.ForeColor = Color.White;
-                    }
-                    else
-                    {
-                        Control.ForeColor = Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3);
-                    }
+                    int val = 2;
+                    DwmSetWindowAttribute(this.Handle, 2, ref val, 4);
+                    MARGINS m = new MARGINS();
+                    m.Left = 1;
+                    m.Right = 0;
+                    m.Bottom = 0;
+                    m.Top = 1;
+                    DwmExtendFrameIntoClientArea(this.Handle, ref m);
                 }
-                catch
+                //Loads saved brightness and changes controls as necessary.
+                BrightnessTrackBar.Value = Properties.Settings.Default.Brightness;
+                this.BackColor = Color.FromArgb(255, Properties.Settings.Default.Brightness, Properties.Settings.Default.Brightness, Properties.Settings.Default.Brightness);
+                foreach (Control Control in this.Controls)
                 {
+                    try
+                    {
+                        if (BrightnessTrackBar.Value < 75)
+                        {
+                            Control.ForeColor = Color.White;
+                        }
+                        else
+                        {
+                            Control.ForeColor = Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3);
+                        }
+                    }
+                    catch
+                    {
 
+                    }
                 }
+            }
+            catch
+            {
+
             }
             //Checks if Ocular directory exists, and runs the CreateDirectories background worker if it does not.
             //Please use the Ocular directory for storing projects and similar data.
-            if (System.IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Ocular"))
+            //Aurora: Fixed code that was unnecessary -- unused if section.
+            if (!System.IO.Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Ocular"))
             {
-
-            }
-            else
-            {
+                //Notif tells the user a folder was created. Also a nice test of Notif's capabilities
+                Notif.Notification notification = new Notif.Notification("Directories created!", "Ocular has created directories for itself to store your projects! No action is needed.");
+                notification.Show();
                 CreateDirectories.RunWorkerAsync();
             }
             //If you add a new directory to the collection, please use a seperate if statement to check its existence.
@@ -111,7 +122,6 @@ namespace Ocular
             //    System.IO.Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\Ocular\NewFolder");
             //}
         }
-
         private void StartWindow_BackColorChanged(object sender, EventArgs e)
         {
             //Changes control backcolors to fit form. Transparency causes visual errors with these controls, so this method
@@ -210,11 +220,9 @@ namespace Ocular
             DialogResult result = NP.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                this.CloseWindow();
-            }
-            else if (result == System.Windows.Forms.DialogResult.Cancel)
-            {
-                //Do nothing
+                OcularMain ocmain = new OcularMain();
+                ocmain.Show();
+                this.Hide();
             }
         }
 
@@ -267,7 +275,6 @@ namespace Ocular
         {
             WhatsNew WN = new WhatsNew();
             WN.ShowDialog();
-            CloseWindow();
         }
 
         private void CloseTimer_Tick(object sender, EventArgs e)
@@ -279,6 +286,52 @@ namespace Ocular
         }
 
         private void BrightnessTrackBar_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitLabel_Click(object sender, EventArgs e)
+        {
+            Confirm cdialog = new Confirm("Are you sure you want to quit Ocular?");
+            if (cdialog.ShowDialog() == System.Windows.Forms.DialogResult.Yes)
+            {
+                CloseWindow();
+            }
+        }
+
+        private void ExitLabel_MouseEnter(object sender, EventArgs e)
+        {
+            if (BrightnessTrackBar.Value < 75)
+            {
+                Transition.run(ExitLabel, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(500));
+            }
+            else
+            {
+                Transition.run(ExitLabel, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(500));
+            }
+        }
+
+        private void ExitLabel_MouseLeave(object sender, EventArgs e)
+        {
+            if (BrightnessTrackBar.Value < 75)
+            {
+                Transition.run(ExitLabel, "ForeColor", Color.White, new TransitionType_EaseInEaseOut(500));
+            }
+            else
+            {
+                Transition.run(ExitLabel, "ForeColor", Color.FromArgb(255, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3, BrightnessTrackBar.Value / 3), new TransitionType_EaseInEaseOut(500));
+            }
+        }
+
+        private void HideTimer_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity.Equals(0))
+            {
+                this.Hide();
+            }
+        }
+
+        private void RecentProjectsGroup_Enter(object sender, EventArgs e)
         {
 
         }

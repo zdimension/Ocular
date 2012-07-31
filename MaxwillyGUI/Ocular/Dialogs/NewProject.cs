@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using Ocular.Dialogs;
 using Transitions;
@@ -71,7 +72,7 @@ namespace Ocular
                 {
                     if (Properties.Settings.Default.Brightness < 75)
                     {
-                        Control.ForeColor = Color.White;
+                        Control.ForeColor = Color.Black;
                     }
                     else
                     {
@@ -98,22 +99,29 @@ namespace Ocular
 
         private void SelectLocationButton_Click(object sender, EventArgs e)
         {
-            SaveFileDialog sfd = new SaveFileDialog();
-            sfd.AddExtension = true;
-            sfd.Filter = "Ocular Project (*.ocproj) | All files (*.*)";
+            FolderBrowserDialog sfd = new FolderBrowserDialog();
             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                ProjectLocationBox.Text = sfd.FileName;
+                ProjectLocationBox.Text = sfd.SelectedPath + "\\";
             }
         }
 
         private void OKButton_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
+            if (System.IO.Directory.Exists(ProjectLocationBox.Text))
+            {
+                Confirm conf = new Confirm("A directory with that name already exists! Are you sure you want to use this folder?");
+                if (conf.ShowDialog() != System.Windows.Forms.DialogResult.Yes)
+                {
+                    //Let the user retry.
+                    return;
+                }
+            }
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }
@@ -122,6 +130,28 @@ namespace Ocular
         {
             this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Close();
+        }
+
+        private void ProjectLocationBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        char[] forbiddencharacters = { '"', '*', '/', ':', '<', '>', '?', '\\', '|' };
+
+        private void ProjectNameField_TextChanged(object sender, EventArgs e)
+        {
+            foreach (char ch in forbiddencharacters)
+            {
+                if (ProjectNameField.Text.Contains(ch))
+                {
+                    ProjectNameField.BackColor = Color.Red;
+                    OKButton.Enabled = false;
+                    return;
+                }
+            }
+            OKButton.Enabled = true;
+            ProjectNameField.BackColor = Color.White;
+            ProjectLocationBox.Text = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Ocular\\Projects\\" + ProjectNameField.Text + "\\";
         }
     }
 }

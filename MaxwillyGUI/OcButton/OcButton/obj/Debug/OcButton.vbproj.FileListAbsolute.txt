@@ -9,3 +9,13 @@ C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\OcButton\OcButton\ob
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\OcButton\OcButton\obj\Debug\OcButton.OcButton.resources
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\OcButton\OcButton\bin\Debug\Transitions.dll
 C:\Users\cameron\Documents\Visual Studio 11\Projects\Ocular\OcButton\OcButton\obj\Debug\OcButton.vbprojResolveAssemblyReference.cache
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\bin\Debug\OcButton.dll
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\bin\Debug\OcButton.pdb
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\bin\Debug\OcButton.xml
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.vbprojResolveAssemblyReference.cache
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.Resources.resources
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.OcButton.resources
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.vbproj.GenerateResource.Cache
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.dll
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.xml
+E:\Ocular\MaxwillyGUI\OcButton\OcButton\obj\Debug\OcButton.pdb

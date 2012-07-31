@@ -1,0 +1,14 @@
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\bin\Debug\Notif.exe
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\bin\Debug\Notif.pdb
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\obj\x86\Debug\Notif.Properties.Resources.resources
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\obj\x86\Debug\Notif.csproj.GenerateResource.Cache
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\obj\x86\Debug\Notif.exe
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\obj\x86\Debug\Notif.pdb
+C:\Users\lam.000\AppData\Local\Temporary Projects\Notif\obj\x86\Debug\Notif.Notification.resources
+E:\Ocular\Notif\Notif\Notif\obj\x86\Debug\Notif.exe
+E:\Ocular\Notif\Notif\Notif\obj\x86\Debug\Notif.pdb
+E:\Ocular\Notif\Notif\Notif\bin\Debug\Notif.exe
+E:\Ocular\Notif\Notif\Notif\bin\Debug\Notif.pdb
+E:\Ocular\Notif\Notif\Notif\obj\x86\Debug\Notif.Notification.resources
+E:\Ocular\Notif\Notif\Notif\obj\x86\Debug\Notif.Properties.Resources.resources
+E:\Ocular\Notif\Notif\Notif\obj\x86\Debug\Notif.csproj.GenerateResource.Cache

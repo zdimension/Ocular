@@ -19,5 +19,16 @@ namespace Ocular
         {
             
         }
+
+        private void SourceCodeEditor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SourceCodeEditor_TextChanged(object sender, FastColoredTextBoxNS.TextChangedEventArgs e)
+        {
+            PreviewControl.Navigate("about:blank");
+            PreviewControl.DocumentText = SourceCodeEditor.Text;
+        }
     }
 }

@@ -80,6 +80,8 @@
             this.SourceCodeEditor.Text = "<!DOCTYPE HTML>\r\n<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/ht" +
     "ml; charset=utf-8\">\r\n<title>Untitled Document</title>\r\n</head>\r\n<body>\r\n\r\n</body" +
     ">\r\n</html>";
+            this.SourceCodeEditor.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.SourceCodeEditor_TextChanged);
+            this.SourceCodeEditor.Load += new System.EventHandler(this.SourceCodeEditor_Load);
             // 
             // PreviewControl
             // 
@@ -110,8 +112,8 @@
             // 
             this.StatusText.ForeColor = System.Drawing.Color.Gray;
             this.StatusText.Name = "StatusText";
-            this.StatusText.Size = new System.Drawing.Size(61, 17);
-            this.StatusText.Text = "StatusText";
+            this.StatusText.Size = new System.Drawing.Size(35, 17);
+            this.StatusText.Text = "Done";
             // 
             // DocumentWindow
             // 

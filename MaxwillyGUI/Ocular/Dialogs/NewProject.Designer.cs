@@ -113,20 +113,21 @@
             // 
             this.ProjectNameField.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProjectNameField.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProjectNameField.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ProjectNameField.Location = new System.Drawing.Point(12, 111);
+            this.ProjectNameField.ForeColor = System.Drawing.Color.Black;
+            this.ProjectNameField.Location = new System.Drawing.Point(12, 131);
             this.ProjectNameField.Name = "ProjectNameField";
             this.ProjectNameField.Size = new System.Drawing.Size(576, 43);
             this.ProjectNameField.TabIndex = 6;
             this.ProjectNameField.Text = "Project Name";
+            this.ProjectNameField.TextChanged += new System.EventHandler(this.ProjectNameField_TextChanged);
             // 
             // SelectLocationButton
             // 
             this.SelectLocationButton.BackColor = System.Drawing.Color.White;
             this.SelectLocationButton.ButtonText = "SELECT";
             this.SelectLocationButton.ForceUppercase = true;
-            this.SelectLocationButton.ForeColor = System.Drawing.Color.Gray;
-            this.SelectLocationButton.Location = new System.Drawing.Point(488, 170);
+            this.SelectLocationButton.ForeColor = System.Drawing.Color.Black;
+            this.SelectLocationButton.Location = new System.Drawing.Point(488, 180);
             this.SelectLocationButton.Name = "SelectLocationButton";
             this.SelectLocationButton.Size = new System.Drawing.Size(100, 43);
             this.SelectLocationButton.TabIndex = 8;
@@ -137,19 +138,20 @@
             // 
             this.ProjectLocationBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ProjectLocationBox.Font = new System.Drawing.Font("Segoe UI Light", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProjectLocationBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ProjectLocationBox.Location = new System.Drawing.Point(12, 170);
+            this.ProjectLocationBox.ForeColor = System.Drawing.Color.Black;
+            this.ProjectLocationBox.Location = new System.Drawing.Point(12, 180);
             this.ProjectLocationBox.Name = "ProjectLocationBox";
             this.ProjectLocationBox.Size = new System.Drawing.Size(469, 43);
             this.ProjectLocationBox.TabIndex = 9;
             this.ProjectLocationBox.Text = "Location";
+            this.ProjectLocationBox.TextChanged += new System.EventHandler(this.ProjectLocationBox_TextChanged);
             // 
             // OKButton
             // 
             this.OKButton.BackColor = System.Drawing.Color.White;
             this.OKButton.ButtonText = "OK";
             this.OKButton.ForceUppercase = true;
-            this.OKButton.ForeColor = System.Drawing.Color.Gray;
+            this.OKButton.ForeColor = System.Drawing.Color.Black;
             this.OKButton.Location = new System.Drawing.Point(488, 345);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(100, 43);
@@ -162,7 +164,7 @@
             this.CancelButton.BackColor = System.Drawing.Color.White;
             this.CancelButton.ButtonText = "CANCEL";
             this.CancelButton.ForceUppercase = true;
-            this.CancelButton.ForeColor = System.Drawing.Color.Gray;
+            this.CancelButton.ForeColor = System.Drawing.Color.Black;
             this.CancelButton.Location = new System.Drawing.Point(12, 345);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(100, 43);

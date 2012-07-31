@@ -32,7 +32,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -61,6 +61,9 @@
       <HintPath>..\..\..\..\..\Desktop\MDITabControl\MdiTabControl\MdiTabControl\bin\Debug\MdiTabControl.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Notif">
+      <HintPath>..\..\Notif\Notif\Notif\bin\Debug\Notif.exe</HintPath>
+    </Reference>
     <Reference Include="OcButton">
       <HintPath>..\OcButton\OcButton\bin\Debug\OcButton.dll</HintPath>
     </Reference>
@@ -86,6 +89,12 @@
     </Compile>
     <Compile Include="Dialogs\BrightnessHelp.Designer.cs">
       <DependentUpon>BrightnessHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\Confirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Confirm.Designer.cs">
+      <DependentUpon>Confirm.cs</DependentUpon>
     </Compile>
     <Compile Include="StartWindow.cs">
       <SubType>Form</SubType>
@@ -139,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="Dialogs\BrightnessHelp.resx">
       <DependentUpon>BrightnessHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Confirm.resx">
+      <DependentUpon>Confirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartWindow.resx">
       <DependentUpon>StartWindow.cs</DependentUpon>

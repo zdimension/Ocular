@@ -49,6 +49,8 @@
             this.CreateDirectories = new System.ComponentModel.BackgroundWorker();
             this.BrightnessHelpLabel = new System.Windows.Forms.Label();
             this.CloseTimer = new System.Windows.Forms.Timer(this.components);
+            this.ExitLabel = new System.Windows.Forms.Label();
+            this.HideTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.BrightnessTrackBar)).BeginInit();
             this.GetStartedGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
@@ -119,9 +121,9 @@
             // 
             // GetStartedGroup
             // 
-            this.GetStartedGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.GetStartedGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GetStartedGroup.BackColor = System.Drawing.Color.Transparent;
             this.GetStartedGroup.Controls.Add(this.NewCSSFileButton);
             this.GetStartedGroup.Controls.Add(this.NewHTMLFileButton);
@@ -179,8 +181,8 @@
             // 
             // RecentProjectsGroup
             // 
-            this.RecentProjectsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.RecentProjectsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.RecentProjectsGroup.BackColor = System.Drawing.Color.Transparent;
             this.RecentProjectsGroup.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecentProjectsGroup.ForeColor = System.Drawing.Color.Gray;
@@ -190,6 +192,7 @@
             this.RecentProjectsGroup.TabIndex = 8;
             this.RecentProjectsGroup.TabStop = false;
             this.RecentProjectsGroup.Text = "Recent Projects";
+            this.RecentProjectsGroup.Enter += new System.EventHandler(this.RecentProjectsGroup_Enter);
             // 
             // WhatsNewLabel
             // 
@@ -198,7 +201,7 @@
             this.WhatsNewLabel.BackColor = System.Drawing.Color.Transparent;
             this.WhatsNewLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WhatsNewLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.WhatsNewLabel.Location = new System.Drawing.Point(432, 378);
+            this.WhatsNewLabel.Location = new System.Drawing.Point(390, 378);
             this.WhatsNewLabel.Name = "WhatsNewLabel";
             this.WhatsNewLabel.Size = new System.Drawing.Size(165, 13);
             this.WhatsNewLabel.TabIndex = 9;
@@ -230,7 +233,7 @@
             this.CreditsLabel.BackColor = System.Drawing.Color.Transparent;
             this.CreditsLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreditsLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.CreditsLabel.Location = new System.Drawing.Point(377, 378);
+            this.CreditsLabel.Location = new System.Drawing.Point(335, 378);
             this.CreditsLabel.Name = "CreditsLabel";
             this.CreditsLabel.Size = new System.Drawing.Size(49, 13);
             this.CreditsLabel.TabIndex = 10;
@@ -264,6 +267,27 @@
             this.CloseTimer.Interval = 1;
             this.CloseTimer.Tick += new System.EventHandler(this.CloseTimer_Tick);
             // 
+            // ExitLabel
+            // 
+            this.ExitLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExitLabel.AutoSize = true;
+            this.ExitLabel.BackColor = System.Drawing.Color.Transparent;
+            this.ExitLabel.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitLabel.ForeColor = System.Drawing.Color.DarkGray;
+            this.ExitLabel.Location = new System.Drawing.Point(561, 378);
+            this.ExitLabel.Name = "ExitLabel";
+            this.ExitLabel.Size = new System.Drawing.Size(27, 13);
+            this.ExitLabel.TabIndex = 12;
+            this.ExitLabel.Text = "EXIT";
+            this.ExitLabel.Click += new System.EventHandler(this.ExitLabel_Click);
+            this.ExitLabel.MouseEnter += new System.EventHandler(this.ExitLabel_MouseEnter);
+            this.ExitLabel.MouseLeave += new System.EventHandler(this.ExitLabel_MouseLeave);
+            // 
+            // HideTimer
+            // 
+            this.HideTimer.Interval = 1;
+            this.HideTimer.Tick += new System.EventHandler(this.HideTimer_Tick);
+            // 
             // StartWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +296,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.ExitLabel);
             this.Controls.Add(this.BrightnessHelpLabel);
             this.Controls.Add(this.CreditsLabel);
             this.Controls.Add(this.WhatsNewLabel);
@@ -286,10 +311,11 @@
             this.Controls.Add(this.BrightnessTrackBar);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StartWindow";
             this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartWindow";
+            this.Text = "Ocular Start Page";
             this.Load += new System.EventHandler(this.StartWindow_Load);
             this.BackColorChanged += new System.EventHandler(this.StartWindow_BackColorChanged);
             ((System.ComponentModel.ISupportInitialize)(this.BrightnessTrackBar)).EndInit();
@@ -321,5 +347,7 @@
         public System.Windows.Forms.TrackBar BrightnessTrackBar;
         private System.Windows.Forms.Label BrightnessHelpLabel;
         private System.Windows.Forms.Timer CloseTimer;
+        private System.Windows.Forms.Label ExitLabel;
+        private System.Windows.Forms.Timer HideTimer;
     }
 }
