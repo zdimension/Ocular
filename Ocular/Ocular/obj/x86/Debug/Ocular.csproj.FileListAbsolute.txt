@@ -36,3 +36,13 @@ C:\Users\cameron\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.ProjectPage.resources
 C:\Users\cameron\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Properties.Resources.resources
 C:\Users\cameron\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Working.resources
 C:\Users\cameron\Ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csproj.GenerateResource.Cache
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.pdb
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csprojResolveAssemblyReference.cache
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.MainPage.resources
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.ProjectPage.resources
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Properties.Resources.resources
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Working.resources
+C:\Users\Jase\Software\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csproj.GenerateResource.Cache
