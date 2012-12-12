@@ -1,0 +1,7 @@
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\bin\Debug\OcFileLoadTest.exe
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\bin\Debug\OcFileLoadTest.pdb
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\bin\Debug\OcFile.dll
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\bin\Debug\OcFile.pdb
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\obj\x86\Debug\OcFileLoadTest.exe
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\obj\x86\Debug\OcFileLoadTest.pdb
+E:\Ocular\SaveLoad Lib\OcFileLoadTest\OcFileLoadTest\OcFileLoadTest\obj\x86\Debug\OcFileLoadTest.csprojResolveAssemblyReference.cache

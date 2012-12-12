@@ -1,0 +1,7 @@
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\bin\Debug\SaveTester.exe
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\bin\Debug\SaveTester.pdb
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\bin\Debug\OcFile.dll
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\bin\Debug\OcFile.pdb
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\obj\x86\Debug\SaveTester.csprojResolveAssemblyReference.cache
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\obj\x86\Debug\SaveTester.exe
+E:\Ocular\SaveLoad Lib\OcFileSaveTest\SaveTester\SaveTester\obj\x86\Debug\SaveTester.pdb
