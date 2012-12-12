@@ -1,3 +1,10 @@
+0.1.3============                         Contributors: Aurora01
+*Added a window title on the main form
+*Added minimize and maximize to the form
+*Added a non-functioning open project form.
+TODO:
+*Make window buttons change colour on hover
+*Fix the button order bug (so the order is |_|O|X| instead of |O|_|X|
 0.1.2============                         Contributors: Aurora01
 *Added exit button to start page and animated them.
 *Fixed a problem where the text would be white in a white text box at some colours.

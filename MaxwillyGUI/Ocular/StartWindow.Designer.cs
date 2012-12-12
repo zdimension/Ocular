@@ -167,6 +167,7 @@
             this.OpenProjectButton.Name = "OpenProjectButton";
             this.OpenProjectButton.Size = new System.Drawing.Size(323, 50);
             this.OpenProjectButton.TabIndex = 1;
+            this.OpenProjectButton.Click += new System.EventHandler(this.OpenProjectButton_Click);
             // 
             // NewProjectButton
             // 

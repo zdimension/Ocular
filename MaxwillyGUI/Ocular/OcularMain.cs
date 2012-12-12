@@ -116,23 +116,34 @@ namespace Ocular
 
         private void CloseButton_MouseEnter(object sender, EventArgs e)
         {
-            if (CloseButton.ForeColor == Color.Gray)
-            {
-                Transition.run(CloseButton, "ForeColor", Color.Black, new TransitionType_EaseInEaseOut(500));
-            }
+                Transition.run(CloseButton, "ForeColor", Color.Green, new TransitionType_EaseInEaseOut(200));
         }
 
         private void CloseButton_MouseLeave(object sender, EventArgs e)
         {
-            if (CloseButton.ForeColor == Color.Black)
-            {
-                Transition.run(CloseButton, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(500));
-            }
+                Transition.run(CloseButton, "ForeColor", Color.Gray, new TransitionType_EaseInEaseOut(200));
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void minimizeLabel_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void maximizeLabel_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
         }
 
     }

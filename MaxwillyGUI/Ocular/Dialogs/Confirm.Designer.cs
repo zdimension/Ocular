@@ -36,15 +36,19 @@
             // 
             // MessageLabel
             // 
+            this.MessageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MessageLabel.AutoSize = true;
             this.MessageLabel.BackColor = System.Drawing.Color.Transparent;
             this.MessageLabel.Font = new System.Drawing.Font("Segoe UI Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MessageLabel.ForeColor = System.Drawing.Color.Gray;
-            this.MessageLabel.Location = new System.Drawing.Point(-5, -2);
+            this.MessageLabel.Location = new System.Drawing.Point(12, 9);
             this.MessageLabel.Name = "MessageLabel";
             this.MessageLabel.Size = new System.Drawing.Size(327, 74);
             this.MessageLabel.TabIndex = 0;
             this.MessageLabel.Text = "Oops, an error has occured.\r\nSorry!";
+            this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.MessageLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // CancelButton

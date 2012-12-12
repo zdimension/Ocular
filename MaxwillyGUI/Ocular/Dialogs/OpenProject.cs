@@ -7,15 +7,23 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
+using Ocular.Dialogs;
 using Transitions;
-namespace Ocular.Dialogs
+namespace Ocular
 {
-    public partial class Credits : Form
+    public partial class OpenProject : Form
     {
+        public OpenProject()
+        {
+            InitializeComponent();
+        }
+
+        //Loads DLLs (DWM, RAM-Reducing thingy), declares relevant structures.
         [DllImport("dwmapi.dll", PreserveSig = true)]
         public static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
-
+        
         [StructLayout(LayoutKind.Sequential)]
         public struct MARGINS
         {
@@ -32,15 +40,18 @@ namespace Ocular.Dialogs
         [DllImport("dwmapi.dll", PreserveSig = false)]
         public static extern bool DwmIsCompositionEnabled();
 
-        public Credits()
+        [DllImport("psapi.dll")]
+        private static extern int EmptyWorkingSet(IntPtr hwProc);
+
+        private static void MinimizeFootprint()
         {
-            InitializeComponent();
+            EmptyWorkingSet(Process.GetCurrentProcess().Handle);
         }
 
-        private void Credits_Load(object sender, EventArgs e)
+        private void NewProject_Load(object sender, EventArgs e)
         {
             //Animates form.
-            Transition.run(this, "Opacity", 0.9, new TransitionType_EaseInEaseOut(600));
+            Transition.run(this, "Opacity", 0.9,new TransitionType_EaseInEaseOut(1000));
             //Draws drop shadow using DWM.
             if (DwmIsCompositionEnabled())
             {
@@ -61,7 +72,7 @@ namespace Ocular.Dialogs
                 {
                     if (Properties.Settings.Default.Brightness < 75)
                     {
-                        Control.ForeColor = Color.White;
+                        Control.ForeColor = Color.Black;
                     }
                     else
                     {
@@ -73,30 +84,45 @@ namespace Ocular.Dialogs
 
                 }
             }
-            CodePlexButton.ForeColor = Color.Black;
-            DoneButton.ForeColor = Color.Black;
         }
 
-        private void DoneButton_Click(object sender, EventArgs e)
+        private void MinFootprint_Tick(object sender, EventArgs e)
         {
-            Transition.run(this, "Opacity", 0.0, new TransitionType_EaseInEaseOut(600));
-            CloseTimer.Enabled = true;
+            //Consistently minimises RAM usage.
+            MinimizeFootprint();
         }
 
-        private void CloseTimer_Tick(object sender, EventArgs e)
+        
+
+        private void SelectLocationButton_Click(object sender, EventArgs e)
         {
-            if (this.Opacity.Equals(0))
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Ocular Projects (*.ocproj)|*.ocproj";
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                this.Close();
+                ProjectLocationBox.Text = ofd.FileName;
             }
         }
 
-        private void CodePlexButton_Click(object sender, EventArgs e)
+        private void OKButton_Load(object sender, EventArgs e)
         {
-            Process.Start("http://ocular.codeplex.com/");
+
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            //Load the file here when ready
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Close();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void ProjectLocationBox_TextChanged(object sender, EventArgs e)
         {
 
         }

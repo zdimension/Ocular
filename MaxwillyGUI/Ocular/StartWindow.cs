@@ -335,5 +335,17 @@ namespace Ocular
         {
 
         }
+
+        private void OpenProjectButton_Click(object sender, EventArgs e)
+        {
+            OpenProject OP = new OpenProject();
+            DialogResult result = OP.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                OcularMain ocmain = new OcularMain();
+                ocmain.Show();
+                this.Hide();
+            }
+        }
     }
 }
