@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using Transitions;
 using System.Runtime.InteropServices;
-using Transitions;
 namespace Ocular
 {
     public partial class OcularMain : Form
@@ -31,9 +30,27 @@ namespace Ocular
 
         [DllImport("dwmapi.dll", PreserveSig = false)]
         public static extern bool DwmIsCompositionEnabled();
-        public OcularMain()
+        public OcularMain(string path, string projectname)
         {
+            this.path = path;
+            projectName = projectname;
             InitializeComponent();
+        }
+        string projectName = string.Empty;
+        string path = string.Empty;
+        public string ProjectName
+        {
+            get
+            {
+                return projectName;
+            }
+        }
+        public string FilePath
+        {
+            get
+            {
+                return path;
+            }
         }
         Timer t = new Timer();
         private void Ocular_Load(object sender, EventArgs e)
@@ -63,7 +80,8 @@ namespace Ocular
             t.Tick += t_Tick;
             t.Interval = 50;
             
-            Form S = new DocumentWindow();
+            Form S = new DocumentWindow(FilePath + "index.htm");
+            System.Diagnostics.Debug.WriteLine(FilePath + "index.htm");
             S.Text = "HTML Editor";
             S.Icon = System.Drawing.Icon.FromHandle(Properties.Resources.NewHTML.GetHicon());
             S.Tag = MainDocControl.TabPages.Add(S);
@@ -127,6 +145,7 @@ namespace Ocular
         private void CloseButton_Click(object sender, EventArgs e)
         {
             Close();
+            Application.Exit();
         }
 
         private void minimizeLabel_Click(object sender, EventArgs e)

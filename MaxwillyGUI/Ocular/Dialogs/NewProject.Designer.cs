@@ -156,7 +156,6 @@
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(100, 43);
             this.OKButton.TabIndex = 10;
-            this.OKButton.Load += new System.EventHandler(this.OKButton_Load);
             this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // CancelButton

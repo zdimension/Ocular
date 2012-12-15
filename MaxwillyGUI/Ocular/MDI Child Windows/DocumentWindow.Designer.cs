@@ -56,6 +56,7 @@
             this.MainSplitContainer.Panel2.Controls.Add(this.PreviewControl);
             this.MainSplitContainer.Size = new System.Drawing.Size(1000, 698);
             this.MainSplitContainer.SplitterDistance = 500;
+            this.MainSplitContainer.SplitterWidth = 5;
             this.MainSplitContainer.TabIndex = 0;
             // 
             // SourceCodeEditor
@@ -85,7 +86,6 @@
             // 
             // PreviewControl
             // 
-            this.PreviewControl.AllowNavigation = false;
             this.PreviewControl.AllowWebBrowserDrop = false;
             this.PreviewControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PreviewControl.IsWebBrowserContextMenuEnabled = false;
@@ -93,10 +93,11 @@
             this.PreviewControl.MinimumSize = new System.Drawing.Size(20, 20);
             this.PreviewControl.Name = "PreviewControl";
             this.PreviewControl.ScriptErrorsSuppressed = true;
-            this.PreviewControl.Size = new System.Drawing.Size(496, 698);
+            this.PreviewControl.Size = new System.Drawing.Size(495, 698);
             this.PreviewControl.TabIndex = 0;
-            this.PreviewControl.Url = new System.Uri("about:blank", System.UriKind.Absolute);
+            this.PreviewControl.Url = new System.Uri("", System.UriKind.Relative);
             this.PreviewControl.WebBrowserShortcutsEnabled = false;
+            this.PreviewControl.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.PreviewControl_DocumentCompleted);
             // 
             // MainStatusStrip
             // 

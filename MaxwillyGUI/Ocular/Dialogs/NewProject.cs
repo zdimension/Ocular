@@ -19,7 +19,22 @@ namespace Ocular
         {
             InitializeComponent();
         }
-
+        string path = string.Empty;
+        string projectName = string.Empty;
+        public string Path
+        {
+            get
+            {
+                return path;
+            }
+        }
+        public string ProjectName
+        {
+            get
+            {
+                return projectName;
+            }
+        }
         //Loads DLLs (DWM, RAM-Reducing thingy), declares relevant structures.
         [DllImport("dwmapi.dll", PreserveSig = true)]
         public static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int attrValue, int attrSize);
@@ -106,14 +121,10 @@ namespace Ocular
             }
         }
 
-        private void OKButton_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void OKButton_Click(object sender, EventArgs e)
         {
-            if (System.IO.Directory.Exists(ProjectLocationBox.Text))
+            if (System.IO.Directory.Exists(System.IO.Path.GetFullPath(ProjectLocationBox.Text)))
             {
                 Confirm conf = new Confirm("A directory with that name already exists! Are you sure you want to use this folder?");
                 if (conf.ShowDialog() != System.Windows.Forms.DialogResult.Yes)
@@ -122,6 +133,9 @@ namespace Ocular
                     return;
                 }
             }
+            //Everything is good, return OK and set the relevant information.
+            path = ProjectLocationBox.Text;
+            projectName = ProjectNameField.Text;
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Close();
         }

@@ -57,7 +57,7 @@
             this.CancelButton.ButtonText = "CANCEL";
             this.CancelButton.ForceUppercase = true;
             this.CancelButton.ForeColor = System.Drawing.Color.Gray;
-            this.CancelButton.Location = new System.Drawing.Point(160, 113);
+            this.CancelButton.Location = new System.Drawing.Point(160, 168);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(80, 25);
             this.CancelButton.TabIndex = 1;
@@ -70,7 +70,7 @@
             this.OkButton.ButtonText = "YES";
             this.OkButton.ForceUppercase = true;
             this.OkButton.ForeColor = System.Drawing.Color.Gray;
-            this.OkButton.Location = new System.Drawing.Point(308, 113);
+            this.OkButton.Location = new System.Drawing.Point(308, 166);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(80, 25);
             this.OkButton.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.NoButton.ButtonText = "NO";
             this.NoButton.ForceUppercase = true;
             this.NoButton.ForeColor = System.Drawing.Color.Gray;
-            this.NoButton.Location = new System.Drawing.Point(12, 113);
+            this.NoButton.Location = new System.Drawing.Point(12, 168);
             this.NoButton.Name = "NoButton";
             this.NoButton.Size = new System.Drawing.Size(80, 25);
             this.NoButton.TabIndex = 3;
@@ -96,7 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Ocular.Properties.Resources.StartWindow;
-            this.ClientSize = new System.Drawing.Size(400, 152);
+            this.ClientSize = new System.Drawing.Size(400, 205);
             this.Controls.Add(this.NoButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.CancelButton);

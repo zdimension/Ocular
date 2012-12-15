@@ -220,7 +220,8 @@ namespace Ocular
             DialogResult result = NP.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                OcularMain ocmain = new OcularMain();
+                System.IO.Directory.CreateDirectory(NP.Path);
+                OcularMain ocmain = new OcularMain(NP.Path, NP.ProjectName);
                 ocmain.Show();
                 this.Hide();
             }
@@ -342,8 +343,8 @@ namespace Ocular
             DialogResult result = OP.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                OcularMain ocmain = new OcularMain();
-                ocmain.Show();
+                //OcularMain ocmain = new OcularMain();
+                //ocmain.Show();
                 this.Hide();
             }
         }
