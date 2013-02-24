@@ -15,7 +15,7 @@ namespace Ocular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Working());
+            Application.Run(new Startup());
         }
     }
 }
