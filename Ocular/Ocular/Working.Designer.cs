@@ -33,27 +33,24 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Alignment = MdiTabControl.TabControl.TabAlignment.Top;
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.MenuRenderer = null;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Size = new System.Drawing.Size(405, 296);
-            this.tabControl1.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.None;
-            this.tabControl1.TabBorderEnhanceWeight = MdiTabControl.TabControl.Weight.Medium;
             this.tabControl1.TabCloseButtonImage = null;
             this.tabControl1.TabCloseButtonImageDisabled = null;
             this.tabControl1.TabCloseButtonImageHot = null;
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.TabsDirection = MdiTabControl.TabControl.FlowDirection.LeftToRight;
             // 
-            // Form1
+            // Working
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 296);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
+            this.Name = "Working";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
