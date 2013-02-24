@@ -134,6 +134,13 @@
     <None Include="Resources\closebtn_hover.png" />
     <None Include="Resources\closebtn_down.png" />
     <None Include="Resources\ocular_startpage.png" />
+    <None Include="Resources\icons\file.png" />
+    <None Include="Resources\icons\folder.png" />
+    <None Include="Resources\icons\ocular.png" />
+    <None Include="Resources\icons\open.png" />
+    <None Include="Resources\icons\project.png" />
+    <None Include="Resources\icons\recentfile.png" />
+    <None Include="Resources\icons\sample.png" />
     <Content Include="Tips.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
