@@ -60,3 +60,14 @@ C:\Users\Tom2\Downloads\ocular-ebc6cefddd52\Ocular\Ocular\bin\Debug\Tips.xml
 C:\Users\Tom2\Downloads\ocular-ebc6cefddd52\Ocular\Ocular\obj\x86\Debug\Ocular.Startup.resources
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.exe
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Tips.xml
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe.config
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csprojResolveAssemblyReference.cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.MainPage.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.ProjectPage.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Properties.Resources.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Startup.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Working.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csproj.GenerateResource.Cache

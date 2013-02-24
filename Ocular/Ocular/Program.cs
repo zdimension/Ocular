@@ -15,7 +15,14 @@ namespace Ocular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Startup());
+            if (global::Ocular.Properties.Settings.Default.DontShowStartupWindow)
+            {
+                Application.Run(new Working());
+            }
+            else
+            {
+                Application.Run(new Startup());
+            }
         }
     }
 }

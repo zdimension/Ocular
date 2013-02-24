@@ -31,6 +31,7 @@
             this.pnlTitle = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lkblSkip = new System.Windows.Forms.Label();
+            this.chkNotShow = new System.Windows.Forms.CheckBox();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,6 +64,7 @@
             // 
             this.lkblSkip.AutoSize = true;
             this.lkblSkip.BackColor = System.Drawing.Color.Transparent;
+            this.lkblSkip.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lkblSkip.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lkblSkip.ForeColor = System.Drawing.Color.Blue;
             this.lkblSkip.Location = new System.Drawing.Point(569, 453);
@@ -72,6 +74,20 @@
             this.lkblSkip.Text = "Skip >>>";
             this.lkblSkip.Click += new System.EventHandler(this.lkblSkip_Click);
             // 
+            // chkNotShow
+            // 
+            this.chkNotShow.AutoSize = true;
+            this.chkNotShow.BackColor = System.Drawing.Color.Transparent;
+            this.chkNotShow.Checked = global::Ocular.Properties.Settings.Default.DontShowStartupWindow;
+            this.chkNotShow.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::Ocular.Properties.Settings.Default, "DontShowStartupWindow", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.chkNotShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.chkNotShow.Location = new System.Drawing.Point(12, 452);
+            this.chkNotShow.Name = "chkNotShow";
+            this.chkNotShow.Size = new System.Drawing.Size(169, 19);
+            this.chkNotShow.TabIndex = 2;
+            this.chkNotShow.Text = "Don\'t show this page again";
+            this.chkNotShow.UseVisualStyleBackColor = false;
+            // 
             // Startup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -79,6 +95,7 @@
             this.BackColor = System.Drawing.Color.Magenta;
             this.BackgroundImage = global::Ocular.Properties.Resources.ocular_startpage;
             this.ClientSize = new System.Drawing.Size(640, 480);
+            this.Controls.Add(this.chkNotShow);
             this.Controls.Add(this.lkblSkip);
             this.Controls.Add(this.pnlTitle);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,5 +115,6 @@
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lkblSkip;
+        private System.Windows.Forms.CheckBox chkNotShow;
     }
 }
