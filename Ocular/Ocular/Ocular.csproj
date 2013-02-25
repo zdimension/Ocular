@@ -165,6 +165,21 @@
     <None Include="Resources\icons\recentfile.png" />
     <None Include="Resources\icons\sample.png" />
     <Content Include="ocular.ico" />
+    <None Include="Resources\icons\application_link.png" />
+    <None Include="Resources\icons\link.png" />
+    <None Include="Resources\icons\shape_square_link.png" />
+    <None Include="Resources\icons\table.png" />
+    <None Include="Resources\icons\text_area.png" />
+    <None Include="Resources\icons\picture.png" />
+    <None Include="Resources\icons\date.png" />
+    <None Include="Resources\icons\email_link.png" />
+    <None Include="Resources\icons\anchor.png" />
+    <None Include="Resources\icons\page_white_flash.png" />
+    <None Include="Resources\icons\script.png" />
+    <None Include="Resources\icons\tag.png" />
+    <None Include="Resources\icons\text_horizontalrule.png" />
+    <None Include="Resources\icons\comments.png" />
+    <None Include="Resources\icons\three_tags.png" />
     <Content Include="Tips.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
