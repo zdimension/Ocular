@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Ocular
 {
-    public partial class Working : Form
+    public partial class Working : ComponentFactory.Krypton.Toolkit.KryptonForm
     {
         public Working()
         {

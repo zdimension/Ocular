@@ -71,3 +71,4 @@ C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Oc
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Startup.resources
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.Working.resources
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.csproj.GenerateResource.Cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\x86\Debug\Ocular.TabForms.File.resources

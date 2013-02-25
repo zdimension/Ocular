@@ -33,7 +33,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ocular.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Component Factory\Krypton Toolkit 4.3.0\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="FastColoredTextBox">
       <HintPath>..\..\..\..\FCTB\FastColoredTextBox.dll</HintPath>
     </Reference>
@@ -61,6 +68,7 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="OcularToolStripRenderer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectPage.cs">
       <SubType>Form</SubType>
@@ -75,6 +83,18 @@
     </Compile>
     <Compile Include="Startup.Designer.cs">
       <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabForms\File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabForms\File.Designer.cs">
+      <DependentUpon>File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabForms\Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabForms\Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
     </Compile>
     <Compile Include="Working.cs">
       <SubType>Form</SubType>
@@ -100,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabForms\File.resx">
+      <DependentUpon>File.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Working.resx">
       <DependentUpon>Working.cs</DependentUpon>
@@ -141,6 +164,7 @@
     <None Include="Resources\icons\project.png" />
     <None Include="Resources\icons\recentfile.png" />
     <None Include="Resources\icons\sample.png" />
+    <Content Include="ocular.ico" />
     <Content Include="Tips.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

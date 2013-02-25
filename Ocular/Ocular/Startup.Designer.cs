@@ -57,6 +57,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Ocular.Properties.Resources.closebtn_normal;
             this.pictureBox1.Location = new System.Drawing.Point(612, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 21);
