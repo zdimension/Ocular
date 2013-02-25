@@ -180,6 +180,11 @@
     <None Include="Resources\icons\text_horizontalrule.png" />
     <None Include="Resources\icons\comments.png" />
     <None Include="Resources\icons\three_tags.png" />
+    <None Include="Resources\icons\large_tiles.png" />
+    <None Include="Resources\icons\page_add.png" />
+    <None Include="Resources\icons\page_save.png" />
+    <None Include="Resources\icons\save_as.png" />
+    <None Include="Resources\icons\page_code.png" />
     <Content Include="Tips.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
