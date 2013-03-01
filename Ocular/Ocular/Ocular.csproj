@@ -84,6 +84,7 @@
     <Compile Include="Startup.Designer.cs">
       <DependentUpon>Startup.cs</DependentUpon>
     </Compile>
+    <Compile Include="SyntaxHighlighter.cs" />
     <Compile Include="TabForms\File.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +96,9 @@
     </Compile>
     <Compile Include="TabForms\Project.Designer.cs">
       <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablessControl.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Working.cs">
       <SubType>Form</SubType>
@@ -185,6 +189,46 @@
     <None Include="Resources\icons\page_save.png" />
     <None Include="Resources\icons\save_as.png" />
     <None Include="Resources\icons\page_code.png" />
+    <None Include="Resources\icons\server_lightning.png" />
+    <None Include="Resources\icons\resultset_next.png" />
+    <None Include="Resources\icons\resultset_previous.png" />
+    <None Include="Resources\icons\comment.png" />
+    <None Include="Resources\icons\page_white.png" />
+    <None Include="Resources\icons\page_white_code.png" />
+    <None Include="Resources\icons\control_play_blue.png" />
+    <None Include="Resources\icons\shape_square.png" />
+    <None Include="Resources\icons\asterisk_orange.png" />
+    <None Include="Resources\icons\script_add.png" />
+    <None Include="Resources\icons\comment_add.png" />
+    <None Include="Resources\icons\comment_delete.png" />
+    <None Include="Resources\icons\text_signature.png" />
+    <None Include="Resources\icons\categories.png" />
+    <None Include="Resources\icons\text_indent.png" />
+    <None Include="Resources\icons\text_indent_remove.png" />
+    <None Include="Resources\icons\file_manager.png" />
+    <None Include="Resources\icons\small_tiles.png" />
+    <None Include="Resources\icons\spellcheck_error.png" />
+    <None Include="Resources\icons\paintcan.png" />
+    <None Include="Resources\icons\world.png" />
+    <None Include="Resources\icons\arrow_refresh.png" />
+    <None Include="Resources\icons\checked.png" />
+    <None Include="Resources\icons\unchecked.png" />
+    <None Include="Resources\btnHtml.png" />
+    <None Include="Resources\btnHtmlDown.png" />
+    <None Include="Resources\btnHtmlHover.png" />
+    <None Include="Resources\btnCSS.png" />
+    <None Include="Resources\btnCSSDown.png" />
+    <None Include="Resources\btnCSSHover.png" />
+    <None Include="Resources\btnCSSUnchecked.png" />
+    <None Include="Resources\btnHtmlUnchecked.png" />
+    <None Include="Resources\icons\text_align_center.png" />
+    <None Include="Resources\icons\text_align_justity.png" />
+    <None Include="Resources\icons\text_align_left.png" />
+    <None Include="Resources\icons\text_align_right.png" />
+    <None Include="Resources\icons\text_bold.png" />
+    <None Include="Resources\icons\text_italic.png" />
+    <None Include="Resources\icons\text_underline.png" />
+    <None Include="Resources\icons\page_magnifier.png" />
     <Content Include="Tips.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

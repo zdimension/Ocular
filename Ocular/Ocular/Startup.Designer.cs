@@ -41,6 +41,10 @@
             this.btnNewCF = new System.Windows.Forms.Button();
             this.btnNewMore = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnStarterPages = new System.Windows.Forms.Button();
+            this.btnCSSStyle = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -241,6 +245,78 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // btnStarterPages
+            // 
+            this.btnStarterPages.BackColor = System.Drawing.Color.Transparent;
+            this.btnStarterPages.FlatAppearance.BorderSize = 0;
+            this.btnStarterPages.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnStarterPages.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnStarterPages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStarterPages.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.btnStarterPages.Image = global::Ocular.Properties.Resources.sample;
+            this.btnStarterPages.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarterPages.Location = new System.Drawing.Point(435, 184);
+            this.btnStarterPages.Name = "btnStarterPages";
+            this.btnStarterPages.Size = new System.Drawing.Size(175, 23);
+            this.btnStarterPages.TabIndex = 11;
+            this.btnStarterPages.Text = "      Starter pages";
+            this.btnStarterPages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStarterPages.UseVisualStyleBackColor = false;
+            // 
+            // btnCSSStyle
+            // 
+            this.btnCSSStyle.BackColor = System.Drawing.Color.Transparent;
+            this.btnCSSStyle.FlatAppearance.BorderSize = 0;
+            this.btnCSSStyle.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnCSSStyle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnCSSStyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCSSStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.btnCSSStyle.Image = global::Ocular.Properties.Resources.sample;
+            this.btnCSSStyle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCSSStyle.Location = new System.Drawing.Point(435, 213);
+            this.btnCSSStyle.Name = "btnCSSStyle";
+            this.btnCSSStyle.Size = new System.Drawing.Size(175, 23);
+            this.btnCSSStyle.TabIndex = 12;
+            this.btnCSSStyle.Text = "      CSS style sheets";
+            this.btnCSSStyle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCSSStyle.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.button2.Image = global::Ocular.Properties.Resources.sample;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(435, 242);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(175, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "      Page design";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(435, 271);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(175, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "      More from the community";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Startup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -248,6 +324,10 @@
             this.BackColor = System.Drawing.Color.Magenta;
             this.BackgroundImage = global::Ocular.Properties.Resources.ocular_startpage;
             this.ClientSize = new System.Drawing.Size(640, 480);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCSSStyle);
+            this.Controls.Add(this.btnStarterPages);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNewMore);
             this.Controls.Add(this.btnNewCF);
@@ -285,5 +365,9 @@
         private System.Windows.Forms.Button btnNewCF;
         private System.Windows.Forms.Button btnNewMore;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStarterPages;
+        private System.Windows.Forms.Button btnCSSStyle;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

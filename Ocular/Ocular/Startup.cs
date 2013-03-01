@@ -68,5 +68,10 @@ namespace Ocular
             this.Hide();
             this.ShowInTaskbar = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
