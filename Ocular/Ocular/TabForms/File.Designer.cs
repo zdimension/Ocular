@@ -32,20 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(File));
             this.kryptonManager = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             this.kryptonPanel = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.tbcMain = new Ocular.TablessControl();
-            this.tbxCode = new System.Windows.Forms.TabPage();
-            this.txCode = new FastColoredTextBoxNS.FastColoredTextBox();
-            this.tbxPreview = new System.Windows.Forms.TabPage();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.tbcPreview = new Ocular.TablessControl();
-            this.tbxTrident = new System.Windows.Forms.TabPage();
-            this.wbxTrident = new System.Windows.Forms.WebBrowser();
             this.cmxWbxTrident = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tbxGecko = new System.Windows.Forms.TabPage();
-            this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.tbxWebkit = new System.Windows.Forms.TabPage();
-            this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pnlToolBoxes = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton6 = new System.Windows.Forms.ToolStripDropDownButton();
@@ -66,26 +54,6 @@
             this.toolStripButton23 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton24 = new System.Windows.Forms.ToolStripButton();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.tablessControl1 = new Ocular.TablessControl();
-            this.tbxHTML = new System.Windows.Forms.TabPage();
-            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnHTML_Underline = new System.Windows.Forms.PictureBox();
-            this.btnHTML_Italic = new System.Windows.Forms.PictureBox();
-            this.btnHTML_Bold = new System.Windows.Forms.PictureBox();
-            this.cbxHTML_Size = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonColorButton1 = new ComponentFactory.Krypton.Toolkit.KryptonColorButton();
-            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.cbxHTML_Style = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.cbxHTML_Font = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.cbxHTML_Format = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.tbxCSS = new System.Windows.Forms.TabPage();
-            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.btnCSS = new System.Windows.Forms.PictureBox();
             this.btnHTML = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -113,8 +81,53 @@
             this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton4 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.tbcMain = new Ocular.TablessControl();
+            this.tbxCode = new System.Windows.Forms.TabPage();
+            this.txCode = new FastColoredTextBoxNS.FastColoredTextBox();
+            this.tbxPreview = new System.Windows.Forms.TabPage();
+            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.tbcPreview = new Ocular.TablessControl();
+            this.tbxTrident = new System.Windows.Forms.TabPage();
+            this.wbxTrident = new System.Windows.Forms.WebBrowser();
+            this.tbxGecko = new System.Windows.Forms.TabPage();
+            this.kryptonLabel7 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tbxWebkit = new System.Windows.Forms.TabPage();
+            this.kryptonLabel6 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnRender = new System.Windows.Forms.ToolStripDropDownButton();
+            this.btnRenderTrident = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRenderGecko = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnRenderWebkit = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablessControl1 = new Ocular.TablessControl();
+            this.tbxHTML = new System.Windows.Forms.TabPage();
+            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnHTML_Underline = new System.Windows.Forms.PictureBox();
+            this.btnHTML_Italic = new System.Windows.Forms.PictureBox();
+            this.btnHTML_Bold = new System.Windows.Forms.PictureBox();
+            this.cbxHTML_Size = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.btnHTML_Color = new ComponentFactory.Krypton.Toolkit.KryptonColorButton();
+            this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.cbxHTML_Style = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.cbxHTML_Font = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.cbxHTML_Format = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.tbxCSS = new System.Windows.Forms.TabPage();
+            this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
+            this.cmxWbxTrident.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pnlToolBoxes)).BeginInit();
+            this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
+            this.kryptonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCSS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHTML)).BeginInit();
+            this.toolStrip3.SuspendLayout();
             this.tbcMain.SuspendLayout();
             this.tbxCode.SuspendLayout();
             this.tbxPreview.SuspendLayout();
@@ -122,13 +135,9 @@
             this.kryptonPanel4.SuspendLayout();
             this.tbcPreview.SuspendLayout();
             this.tbxTrident.SuspendLayout();
-            this.cmxWbxTrident.SuspendLayout();
             this.tbxGecko.SuspendLayout();
             this.tbxWebkit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pnlToolBoxes)).BeginInit();
-            this.toolStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
-            this.kryptonPanel1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.tablessControl1.SuspendLayout();
             this.tbxHTML.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -144,9 +153,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxHTML_Format)).BeginInit();
             this.tbxCSS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCSS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHTML)).BeginInit();
-            this.toolStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPanel
@@ -162,103 +168,6 @@
             this.kryptonPanel.Size = new System.Drawing.Size(729, 503);
             this.kryptonPanel.TabIndex = 0;
             // 
-            // tbcMain
-            // 
-            this.tbcMain.Controls.Add(this.tbxCode);
-            this.tbcMain.Controls.Add(this.tbxPreview);
-            this.tbcMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbcMain.Location = new System.Drawing.Point(30, 25);
-            this.tbcMain.Name = "tbcMain";
-            this.tbcMain.SelectedIndex = 0;
-            this.tbcMain.Size = new System.Drawing.Size(529, 384);
-            this.tbcMain.TabIndex = 5;
-            // 
-            // tbxCode
-            // 
-            this.tbxCode.Controls.Add(this.txCode);
-            this.tbxCode.Location = new System.Drawing.Point(1, 21);
-            this.tbxCode.Name = "tbxCode";
-            this.tbxCode.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxCode.Size = new System.Drawing.Size(527, 362);
-            this.tbxCode.TabIndex = 0;
-            this.tbxCode.Text = "Code";
-            this.tbxCode.UseVisualStyleBackColor = true;
-            // 
-            // txCode
-            // 
-            this.txCode.AutoScrollMinSize = new System.Drawing.Size(732, 195);
-            this.txCode.BackBrush = null;
-            this.txCode.CommentPrefix = null;
-            this.txCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txCode.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            this.txCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txCode.LeftBracket = '<';
-            this.txCode.LeftBracket2 = '(';
-            this.txCode.Location = new System.Drawing.Point(3, 3);
-            this.txCode.Name = "txCode";
-            this.txCode.Paddings = new System.Windows.Forms.Padding(0);
-            this.txCode.RightBracket = '>';
-            this.txCode.RightBracket2 = ')';
-            this.txCode.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
-            this.txCode.Size = new System.Drawing.Size(521, 356);
-            this.txCode.TabIndex = 4;
-            this.txCode.Text = resources.GetString("txCode.Text");
-            this.txCode.Load += new System.EventHandler(this.txCode_Load);
-            // 
-            // tbxPreview
-            // 
-            this.tbxPreview.Controls.Add(this.kryptonPanel4);
-            this.tbxPreview.Location = new System.Drawing.Point(1, 21);
-            this.tbxPreview.Name = "tbxPreview";
-            this.tbxPreview.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxPreview.Size = new System.Drawing.Size(527, 362);
-            this.tbxPreview.TabIndex = 1;
-            this.tbxPreview.Text = "Preview";
-            this.tbxPreview.UseVisualStyleBackColor = true;
-            // 
-            // kryptonPanel4
-            // 
-            this.kryptonPanel4.Controls.Add(this.tbcPreview);
-            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel4.Location = new System.Drawing.Point(3, 3);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(521, 356);
-            this.kryptonPanel4.TabIndex = 1;
-            // 
-            // tbcPreview
-            // 
-            this.tbcPreview.Controls.Add(this.tbxTrident);
-            this.tbcPreview.Controls.Add(this.tbxGecko);
-            this.tbcPreview.Controls.Add(this.tbxWebkit);
-            this.tbcPreview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbcPreview.Location = new System.Drawing.Point(0, 0);
-            this.tbcPreview.Name = "tbcPreview";
-            this.tbcPreview.SelectedIndex = 0;
-            this.tbcPreview.Size = new System.Drawing.Size(521, 356);
-            this.tbcPreview.TabIndex = 0;
-            // 
-            // tbxTrident
-            // 
-            this.tbxTrident.Controls.Add(this.wbxTrident);
-            this.tbxTrident.Location = new System.Drawing.Point(1, 21);
-            this.tbxTrident.Name = "tbxTrident";
-            this.tbxTrident.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxTrident.Size = new System.Drawing.Size(519, 334);
-            this.tbxTrident.TabIndex = 0;
-            this.tbxTrident.Text = "Trident (IE)";
-            this.tbxTrident.UseVisualStyleBackColor = true;
-            // 
-            // wbxTrident
-            // 
-            this.wbxTrident.ContextMenuStrip = this.cmxWbxTrident;
-            this.wbxTrident.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.wbxTrident.IsWebBrowserContextMenuEnabled = false;
-            this.wbxTrident.Location = new System.Drawing.Point(3, 3);
-            this.wbxTrident.MinimumSize = new System.Drawing.Size(20, 20);
-            this.wbxTrident.Name = "wbxTrident";
-            this.wbxTrident.Size = new System.Drawing.Size(513, 328);
-            this.wbxTrident.TabIndex = 0;
-            // 
             // cmxWbxTrident
             // 
             this.cmxWbxTrident.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -272,44 +181,6 @@
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
-            // 
-            // tbxGecko
-            // 
-            this.tbxGecko.Controls.Add(this.kryptonLabel7);
-            this.tbxGecko.Location = new System.Drawing.Point(1, 21);
-            this.tbxGecko.Name = "tbxGecko";
-            this.tbxGecko.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxGecko.Size = new System.Drawing.Size(519, 334);
-            this.tbxGecko.TabIndex = 1;
-            this.tbxGecko.Text = "Gecko (Firefox)";
-            this.tbxGecko.UseVisualStyleBackColor = true;
-            // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(58, 105);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(236, 20);
-            this.kryptonLabel7.TabIndex = 1;
-            this.kryptonLabel7.Values.Text = "TODO: Add a gecko browser control here";
-            // 
-            // tbxWebkit
-            // 
-            this.tbxWebkit.Controls.Add(this.kryptonLabel6);
-            this.tbxWebkit.Location = new System.Drawing.Point(1, 21);
-            this.tbxWebkit.Name = "tbxWebkit";
-            this.tbxWebkit.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxWebkit.Size = new System.Drawing.Size(519, 334);
-            this.tbxWebkit.TabIndex = 2;
-            this.tbxWebkit.Text = "Webkit (Chrome/Safari)";
-            this.tbxWebkit.UseVisualStyleBackColor = true;
-            // 
-            // kryptonLabel6
-            // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(57, 132);
-            this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(239, 20);
-            this.kryptonLabel6.TabIndex = 0;
-            this.kryptonLabel6.Values.Text = "TODO: Add a webkit browser control here";
             // 
             // pnlToolBoxes
             // 
@@ -496,202 +367,6 @@
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.Size = new System.Drawing.Size(729, 94);
             this.kryptonPanel1.TabIndex = 1;
-            // 
-            // tablessControl1
-            // 
-            this.tablessControl1.Controls.Add(this.tbxHTML);
-            this.tablessControl1.Controls.Add(this.tbxCSS);
-            this.tablessControl1.Location = new System.Drawing.Point(92, 4);
-            this.tablessControl1.Name = "tablessControl1";
-            this.tablessControl1.SelectedIndex = 0;
-            this.tablessControl1.Size = new System.Drawing.Size(621, 87);
-            this.tablessControl1.TabIndex = 3;
-            // 
-            // tbxHTML
-            // 
-            this.tbxHTML.Controls.Add(this.kryptonPanel2);
-            this.tbxHTML.Location = new System.Drawing.Point(1, 21);
-            this.tbxHTML.Name = "tbxHTML";
-            this.tbxHTML.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxHTML.Size = new System.Drawing.Size(619, 65);
-            this.tbxHTML.TabIndex = 0;
-            this.tbxHTML.Text = "HTML";
-            this.tbxHTML.UseVisualStyleBackColor = true;
-            // 
-            // kryptonPanel2
-            // 
-            this.kryptonPanel2.Controls.Add(this.pictureBox1);
-            this.kryptonPanel2.Controls.Add(this.pictureBox2);
-            this.kryptonPanel2.Controls.Add(this.btnHTML_Underline);
-            this.kryptonPanel2.Controls.Add(this.btnHTML_Italic);
-            this.kryptonPanel2.Controls.Add(this.btnHTML_Bold);
-            this.kryptonPanel2.Controls.Add(this.cbxHTML_Size);
-            this.kryptonPanel2.Controls.Add(this.kryptonLabel5);
-            this.kryptonPanel2.Controls.Add(this.kryptonColorButton1);
-            this.kryptonPanel2.Controls.Add(this.kryptonLabel4);
-            this.kryptonPanel2.Controls.Add(this.cbxHTML_Style);
-            this.kryptonPanel2.Controls.Add(this.kryptonLabel3);
-            this.kryptonPanel2.Controls.Add(this.cbxHTML_Font);
-            this.kryptonPanel2.Controls.Add(this.cbxHTML_Format);
-            this.kryptonPanel2.Controls.Add(this.kryptonLabel2);
-            this.kryptonPanel2.Controls.Add(this.kryptonLabel1);
-            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel2.Location = new System.Drawing.Point(3, 3);
-            this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(613, 59);
-            this.kryptonPanel2.TabIndex = 0;
-            this.kryptonPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Ocular.Properties.Resources.text_italic;
-            this.pictureBox1.Location = new System.Drawing.Point(405, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Ocular.Properties.Resources.text_bold;
-            this.pictureBox2.Location = new System.Drawing.Point(378, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnHTML_Underline
-            // 
-            this.btnHTML_Underline.Image = global::Ocular.Properties.Resources.text_underline;
-            this.btnHTML_Underline.Location = new System.Drawing.Point(351, 3);
-            this.btnHTML_Underline.Name = "btnHTML_Underline";
-            this.btnHTML_Underline.Size = new System.Drawing.Size(16, 16);
-            this.btnHTML_Underline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnHTML_Underline.TabIndex = 12;
-            this.btnHTML_Underline.TabStop = false;
-            // 
-            // btnHTML_Italic
-            // 
-            this.btnHTML_Italic.Image = global::Ocular.Properties.Resources.text_italic;
-            this.btnHTML_Italic.Location = new System.Drawing.Point(324, 3);
-            this.btnHTML_Italic.Name = "btnHTML_Italic";
-            this.btnHTML_Italic.Size = new System.Drawing.Size(16, 16);
-            this.btnHTML_Italic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnHTML_Italic.TabIndex = 11;
-            this.btnHTML_Italic.TabStop = false;
-            // 
-            // btnHTML_Bold
-            // 
-            this.btnHTML_Bold.Image = global::Ocular.Properties.Resources.text_bold;
-            this.btnHTML_Bold.Location = new System.Drawing.Point(297, 3);
-            this.btnHTML_Bold.Name = "btnHTML_Bold";
-            this.btnHTML_Bold.Size = new System.Drawing.Size(16, 16);
-            this.btnHTML_Bold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btnHTML_Bold.TabIndex = 10;
-            this.btnHTML_Bold.TabStop = false;
-            // 
-            // cbxHTML_Size
-            // 
-            this.cbxHTML_Size.DropDownWidth = 52;
-            this.cbxHTML_Size.Location = new System.Drawing.Point(326, 27);
-            this.cbxHTML_Size.Name = "cbxHTML_Size";
-            this.cbxHTML_Size.Size = new System.Drawing.Size(52, 21);
-            this.cbxHTML_Size.TabIndex = 9;
-            this.cbxHTML_Size.Text = "None";
-            // 
-            // kryptonLabel5
-            // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(285, 27);
-            this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(38, 20);
-            this.kryptonLabel5.TabIndex = 8;
-            this.kryptonLabel5.Values.Text = "Size :";
-            // 
-            // kryptonColorButton1
-            // 
-            this.kryptonColorButton1.Location = new System.Drawing.Point(197, 24);
-            this.kryptonColorButton1.Name = "kryptonColorButton1";
-            this.kryptonColorButton1.Size = new System.Drawing.Size(82, 25);
-            this.kryptonColorButton1.TabIndex = 7;
-            // 
-            // kryptonLabel4
-            // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(149, 27);
-            this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(46, 20);
-            this.kryptonLabel4.TabIndex = 6;
-            this.kryptonLabel4.Values.Text = "Color :";
-            // 
-            // cbxHTML_Style
-            // 
-            this.cbxHTML_Style.DropDownWidth = 86;
-            this.cbxHTML_Style.Location = new System.Drawing.Point(193, 1);
-            this.cbxHTML_Style.Name = "cbxHTML_Style";
-            this.cbxHTML_Style.Size = new System.Drawing.Size(86, 21);
-            this.cbxHTML_Style.TabIndex = 5;
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(149, 3);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(43, 20);
-            this.kryptonLabel3.TabIndex = 4;
-            this.kryptonLabel3.Values.Text = "Style :";
-            // 
-            // cbxHTML_Font
-            // 
-            this.cbxHTML_Font.DropDownWidth = 86;
-            this.cbxHTML_Font.Location = new System.Drawing.Point(59, 27);
-            this.cbxHTML_Font.Name = "cbxHTML_Font";
-            this.cbxHTML_Font.Size = new System.Drawing.Size(86, 21);
-            this.cbxHTML_Font.TabIndex = 3;
-            this.cbxHTML_Font.Text = "None";
-            // 
-            // cbxHTML_Format
-            // 
-            this.cbxHTML_Format.DropDownWidth = 86;
-            this.cbxHTML_Format.Location = new System.Drawing.Point(59, 1);
-            this.cbxHTML_Format.Name = "cbxHTML_Format";
-            this.cbxHTML_Format.Size = new System.Drawing.Size(86, 21);
-            this.cbxHTML_Format.TabIndex = 2;
-            this.cbxHTML_Format.Text = "None";
-            // 
-            // kryptonLabel2
-            // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(16, 28);
-            this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(41, 20);
-            this.kryptonLabel2.TabIndex = 1;
-            this.kryptonLabel2.Values.Text = "Font :";
-            // 
-            // kryptonLabel1
-            // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(3, 3);
-            this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(55, 20);
-            this.kryptonLabel1.TabIndex = 0;
-            this.kryptonLabel1.Values.Text = "Format :";
-            // 
-            // tbxCSS
-            // 
-            this.tbxCSS.Controls.Add(this.kryptonPanel3);
-            this.tbxCSS.Location = new System.Drawing.Point(1, 21);
-            this.tbxCSS.Name = "tbxCSS";
-            this.tbxCSS.Padding = new System.Windows.Forms.Padding(3);
-            this.tbxCSS.Size = new System.Drawing.Size(619, 65);
-            this.tbxCSS.TabIndex = 1;
-            this.tbxCSS.Text = "CSS";
-            this.tbxCSS.UseVisualStyleBackColor = true;
-            // 
-            // kryptonPanel3
-            // 
-            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel3.Location = new System.Drawing.Point(3, 3);
-            this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(613, 59);
-            this.kryptonPanel3.TabIndex = 0;
             // 
             // btnCSS
             // 
@@ -968,6 +643,430 @@
             this.toolStripDropDownButton5.Size = new System.Drawing.Size(29, 22);
             this.toolStripDropDownButton5.Text = "toolStripDropDownButton5";
             // 
+            // tbcMain
+            // 
+            this.tbcMain.Controls.Add(this.tbxCode);
+            this.tbcMain.Controls.Add(this.tbxPreview);
+            this.tbcMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbcMain.Location = new System.Drawing.Point(30, 25);
+            this.tbcMain.Name = "tbcMain";
+            this.tbcMain.SelectedIndex = 0;
+            this.tbcMain.Size = new System.Drawing.Size(529, 384);
+            this.tbcMain.TabIndex = 5;
+            // 
+            // tbxCode
+            // 
+            this.tbxCode.Controls.Add(this.txCode);
+            this.tbxCode.Location = new System.Drawing.Point(1, 21);
+            this.tbxCode.Name = "tbxCode";
+            this.tbxCode.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxCode.Size = new System.Drawing.Size(527, 362);
+            this.tbxCode.TabIndex = 0;
+            this.tbxCode.Text = "Code";
+            this.tbxCode.UseVisualStyleBackColor = true;
+            // 
+            // txCode
+            // 
+            this.txCode.AutoScrollMinSize = new System.Drawing.Size(732, 195);
+            this.txCode.BackBrush = null;
+            this.txCode.CommentPrefix = null;
+            this.txCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txCode.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.txCode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txCode.LeftBracket = '<';
+            this.txCode.LeftBracket2 = '(';
+            this.txCode.Location = new System.Drawing.Point(3, 3);
+            this.txCode.Name = "txCode";
+            this.txCode.Paddings = new System.Windows.Forms.Padding(0);
+            this.txCode.RightBracket = '>';
+            this.txCode.RightBracket2 = ')';
+            this.txCode.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.txCode.Size = new System.Drawing.Size(521, 356);
+            this.txCode.TabIndex = 4;
+            this.txCode.Text = resources.GetString("txCode.Text");
+            this.txCode.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.txCode_TextChanged);
+            this.txCode.Load += new System.EventHandler(this.txCode_Load);
+            // 
+            // tbxPreview
+            // 
+            this.tbxPreview.Controls.Add(this.kryptonPanel4);
+            this.tbxPreview.Location = new System.Drawing.Point(1, 19);
+            this.tbxPreview.Name = "tbxPreview";
+            this.tbxPreview.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxPreview.Size = new System.Drawing.Size(527, 364);
+            this.tbxPreview.TabIndex = 1;
+            this.tbxPreview.Text = "Preview";
+            this.tbxPreview.UseVisualStyleBackColor = true;
+            // 
+            // kryptonPanel4
+            // 
+            this.kryptonPanel4.Controls.Add(this.tbcPreview);
+            this.kryptonPanel4.Controls.Add(this.toolStrip1);
+            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel4.Location = new System.Drawing.Point(3, 3);
+            this.kryptonPanel4.Name = "kryptonPanel4";
+            this.kryptonPanel4.Size = new System.Drawing.Size(521, 358);
+            this.kryptonPanel4.TabIndex = 1;
+            // 
+            // tbcPreview
+            // 
+            this.tbcPreview.Controls.Add(this.tbxTrident);
+            this.tbcPreview.Controls.Add(this.tbxGecko);
+            this.tbcPreview.Controls.Add(this.tbxWebkit);
+            this.tbcPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbcPreview.Location = new System.Drawing.Point(0, 25);
+            this.tbcPreview.Name = "tbcPreview";
+            this.tbcPreview.SelectedIndex = 0;
+            this.tbcPreview.Size = new System.Drawing.Size(521, 333);
+            this.tbcPreview.TabIndex = 0;
+            // 
+            // tbxTrident
+            // 
+            this.tbxTrident.Controls.Add(this.wbxTrident);
+            this.tbxTrident.Location = new System.Drawing.Point(1, 21);
+            this.tbxTrident.Name = "tbxTrident";
+            this.tbxTrident.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxTrident.Size = new System.Drawing.Size(519, 311);
+            this.tbxTrident.TabIndex = 0;
+            this.tbxTrident.Text = "Trident (IE)";
+            this.tbxTrident.UseVisualStyleBackColor = true;
+            // 
+            // wbxTrident
+            // 
+            this.wbxTrident.ContextMenuStrip = this.cmxWbxTrident;
+            this.wbxTrident.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wbxTrident.IsWebBrowserContextMenuEnabled = false;
+            this.wbxTrident.Location = new System.Drawing.Point(3, 3);
+            this.wbxTrident.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbxTrident.Name = "wbxTrident";
+            this.wbxTrident.Size = new System.Drawing.Size(513, 305);
+            this.wbxTrident.TabIndex = 0;
+            // 
+            // tbxGecko
+            // 
+            this.tbxGecko.Controls.Add(this.kryptonLabel7);
+            this.tbxGecko.Location = new System.Drawing.Point(1, 19);
+            this.tbxGecko.Name = "tbxGecko";
+            this.tbxGecko.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxGecko.Size = new System.Drawing.Size(519, 313);
+            this.tbxGecko.TabIndex = 1;
+            this.tbxGecko.Text = "Gecko (Firefox)";
+            this.tbxGecko.UseVisualStyleBackColor = true;
+            // 
+            // kryptonLabel7
+            // 
+            this.kryptonLabel7.Location = new System.Drawing.Point(58, 105);
+            this.kryptonLabel7.Name = "kryptonLabel7";
+            this.kryptonLabel7.Size = new System.Drawing.Size(236, 20);
+            this.kryptonLabel7.TabIndex = 1;
+            this.kryptonLabel7.Values.Text = "TODO: Add a gecko browser control here";
+            // 
+            // tbxWebkit
+            // 
+            this.tbxWebkit.Controls.Add(this.kryptonLabel6);
+            this.tbxWebkit.Location = new System.Drawing.Point(1, 19);
+            this.tbxWebkit.Name = "tbxWebkit";
+            this.tbxWebkit.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxWebkit.Size = new System.Drawing.Size(519, 313);
+            this.tbxWebkit.TabIndex = 2;
+            this.tbxWebkit.Text = "Webkit (Chrome/Safari)";
+            this.tbxWebkit.UseVisualStyleBackColor = true;
+            // 
+            // kryptonLabel6
+            // 
+            this.kryptonLabel6.Location = new System.Drawing.Point(57, 132);
+            this.kryptonLabel6.Name = "kryptonLabel6";
+            this.kryptonLabel6.Size = new System.Drawing.Size(239, 20);
+            this.kryptonLabel6.TabIndex = 0;
+            this.kryptonLabel6.Values.Text = "TODO: Add a webkit browser control here";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnRender});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(521, 25);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnRender
+            // 
+            this.btnRender.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnRenderTrident,
+            this.btnRenderGecko,
+            this.btnRenderWebkit});
+            this.btnRender.Image = ((System.Drawing.Image)(resources.GetObject("btnRender.Image")));
+            this.btnRender.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnRender.Name = "btnRender";
+            this.btnRender.Size = new System.Drawing.Size(94, 22);
+            this.btnRender.Text = "Trident (IE)";
+            // 
+            // btnRenderTrident
+            // 
+            this.btnRenderTrident.Checked = true;
+            this.btnRenderTrident.CheckOnClick = true;
+            this.btnRenderTrident.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.btnRenderTrident.Name = "btnRenderTrident";
+            this.btnRenderTrident.Size = new System.Drawing.Size(199, 22);
+            this.btnRenderTrident.Text = "Trident (IE)";
+            this.btnRenderTrident.Click += new System.EventHandler(this.btnRenderTrident_Click);
+            // 
+            // btnRenderGecko
+            // 
+            this.btnRenderGecko.CheckOnClick = true;
+            this.btnRenderGecko.Name = "btnRenderGecko";
+            this.btnRenderGecko.Size = new System.Drawing.Size(199, 22);
+            this.btnRenderGecko.Text = "Gecko (Firefox)";
+            this.btnRenderGecko.Click += new System.EventHandler(this.btnRenderGecko_Click);
+            // 
+            // btnRenderWebkit
+            // 
+            this.btnRenderWebkit.CheckOnClick = true;
+            this.btnRenderWebkit.Name = "btnRenderWebkit";
+            this.btnRenderWebkit.Size = new System.Drawing.Size(199, 22);
+            this.btnRenderWebkit.Text = "Webkit (Chrome/Safari)";
+            this.btnRenderWebkit.Click += new System.EventHandler(this.btnRenderWebkit_Click);
+            // 
+            // tablessControl1
+            // 
+            this.tablessControl1.Controls.Add(this.tbxHTML);
+            this.tablessControl1.Controls.Add(this.tbxCSS);
+            this.tablessControl1.Location = new System.Drawing.Point(92, 4);
+            this.tablessControl1.Name = "tablessControl1";
+            this.tablessControl1.SelectedIndex = 0;
+            this.tablessControl1.Size = new System.Drawing.Size(621, 87);
+            this.tablessControl1.TabIndex = 3;
+            // 
+            // tbxHTML
+            // 
+            this.tbxHTML.Controls.Add(this.kryptonPanel2);
+            this.tbxHTML.Location = new System.Drawing.Point(1, 21);
+            this.tbxHTML.Name = "tbxHTML";
+            this.tbxHTML.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxHTML.Size = new System.Drawing.Size(619, 65);
+            this.tbxHTML.TabIndex = 0;
+            this.tbxHTML.Text = "HTML";
+            this.tbxHTML.UseVisualStyleBackColor = true;
+            // 
+            // kryptonPanel2
+            // 
+            this.kryptonPanel2.Controls.Add(this.pictureBox1);
+            this.kryptonPanel2.Controls.Add(this.pictureBox2);
+            this.kryptonPanel2.Controls.Add(this.btnHTML_Underline);
+            this.kryptonPanel2.Controls.Add(this.btnHTML_Italic);
+            this.kryptonPanel2.Controls.Add(this.btnHTML_Bold);
+            this.kryptonPanel2.Controls.Add(this.cbxHTML_Size);
+            this.kryptonPanel2.Controls.Add(this.kryptonLabel5);
+            this.kryptonPanel2.Controls.Add(this.btnHTML_Color);
+            this.kryptonPanel2.Controls.Add(this.kryptonLabel4);
+            this.kryptonPanel2.Controls.Add(this.cbxHTML_Style);
+            this.kryptonPanel2.Controls.Add(this.kryptonLabel3);
+            this.kryptonPanel2.Controls.Add(this.cbxHTML_Font);
+            this.kryptonPanel2.Controls.Add(this.cbxHTML_Format);
+            this.kryptonPanel2.Controls.Add(this.kryptonLabel2);
+            this.kryptonPanel2.Controls.Add(this.kryptonLabel1);
+            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel2.Location = new System.Drawing.Point(3, 3);
+            this.kryptonPanel2.Name = "kryptonPanel2";
+            this.kryptonPanel2.Size = new System.Drawing.Size(613, 59);
+            this.kryptonPanel2.TabIndex = 0;
+            this.kryptonPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.kryptonPanel2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Ocular.Properties.Resources.text_italic;
+            this.pictureBox1.Location = new System.Drawing.Point(405, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Ocular.Properties.Resources.text_bold;
+            this.pictureBox2.Location = new System.Drawing.Point(378, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnHTML_Underline
+            // 
+            this.btnHTML_Underline.Image = global::Ocular.Properties.Resources.text_underline;
+            this.btnHTML_Underline.Location = new System.Drawing.Point(351, 3);
+            this.btnHTML_Underline.Name = "btnHTML_Underline";
+            this.btnHTML_Underline.Size = new System.Drawing.Size(16, 16);
+            this.btnHTML_Underline.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnHTML_Underline.TabIndex = 12;
+            this.btnHTML_Underline.TabStop = false;
+            // 
+            // btnHTML_Italic
+            // 
+            this.btnHTML_Italic.Image = global::Ocular.Properties.Resources.text_italic;
+            this.btnHTML_Italic.Location = new System.Drawing.Point(324, 3);
+            this.btnHTML_Italic.Name = "btnHTML_Italic";
+            this.btnHTML_Italic.Size = new System.Drawing.Size(16, 16);
+            this.btnHTML_Italic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnHTML_Italic.TabIndex = 11;
+            this.btnHTML_Italic.TabStop = false;
+            // 
+            // btnHTML_Bold
+            // 
+            this.btnHTML_Bold.Image = global::Ocular.Properties.Resources.text_bold;
+            this.btnHTML_Bold.Location = new System.Drawing.Point(297, 3);
+            this.btnHTML_Bold.Name = "btnHTML_Bold";
+            this.btnHTML_Bold.Size = new System.Drawing.Size(16, 16);
+            this.btnHTML_Bold.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnHTML_Bold.TabIndex = 10;
+            this.btnHTML_Bold.TabStop = false;
+            // 
+            // cbxHTML_Size
+            // 
+            this.cbxHTML_Size.DropDownWidth = 10;
+            this.cbxHTML_Size.FormattingEnabled = true;
+            this.cbxHTML_Size.Items.AddRange(new object[] {
+            "2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "16",
+            "18",
+            "20",
+            "22",
+            "24",
+            "26",
+            "28",
+            "30",
+            "32",
+            "34",
+            "36",
+            "38",
+            "40",
+            "44",
+            "48",
+            "50",
+            "56",
+            "64",
+            "76",
+            "84",
+            "96",
+            "100",
+            "106",
+            "112",
+            "124",
+            "130"});
+            this.cbxHTML_Size.Location = new System.Drawing.Point(326, 27);
+            this.cbxHTML_Size.Name = "cbxHTML_Size";
+            this.cbxHTML_Size.Size = new System.Drawing.Size(52, 21);
+            this.cbxHTML_Size.TabIndex = 9;
+            this.cbxHTML_Size.Text = "None";
+            // 
+            // kryptonLabel5
+            // 
+            this.kryptonLabel5.Location = new System.Drawing.Point(285, 27);
+            this.kryptonLabel5.Name = "kryptonLabel5";
+            this.kryptonLabel5.Size = new System.Drawing.Size(38, 20);
+            this.kryptonLabel5.TabIndex = 8;
+            this.kryptonLabel5.Values.Text = "Size :";
+            // 
+            // btnHTML_Color
+            // 
+            this.btnHTML_Color.Location = new System.Drawing.Point(197, 24);
+            this.btnHTML_Color.Name = "btnHTML_Color";
+            this.btnHTML_Color.SelectedColor = System.Drawing.Color.Black;
+            this.btnHTML_Color.Size = new System.Drawing.Size(82, 25);
+            this.btnHTML_Color.TabIndex = 7;
+            this.btnHTML_Color.Values.Text = "Black";
+            // 
+            // kryptonLabel4
+            // 
+            this.kryptonLabel4.Location = new System.Drawing.Point(149, 27);
+            this.kryptonLabel4.Name = "kryptonLabel4";
+            this.kryptonLabel4.Size = new System.Drawing.Size(46, 20);
+            this.kryptonLabel4.TabIndex = 6;
+            this.kryptonLabel4.Values.Text = "Color :";
+            // 
+            // cbxHTML_Style
+            // 
+            this.cbxHTML_Style.DropDownWidth = 86;
+            this.cbxHTML_Style.Location = new System.Drawing.Point(193, 1);
+            this.cbxHTML_Style.Name = "cbxHTML_Style";
+            this.cbxHTML_Style.Size = new System.Drawing.Size(86, 21);
+            this.cbxHTML_Style.TabIndex = 5;
+            // 
+            // kryptonLabel3
+            // 
+            this.kryptonLabel3.Location = new System.Drawing.Point(149, 3);
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Size = new System.Drawing.Size(43, 20);
+            this.kryptonLabel3.TabIndex = 4;
+            this.kryptonLabel3.Values.Text = "Style :";
+            // 
+            // cbxHTML_Font
+            // 
+            this.cbxHTML_Font.DropDownWidth = 86;
+            this.cbxHTML_Font.Location = new System.Drawing.Point(59, 27);
+            this.cbxHTML_Font.Name = "cbxHTML_Font";
+            this.cbxHTML_Font.Size = new System.Drawing.Size(86, 21);
+            this.cbxHTML_Font.TabIndex = 3;
+            this.cbxHTML_Font.Text = "None";
+            // 
+            // cbxHTML_Format
+            // 
+            this.cbxHTML_Format.DropDownWidth = 86;
+            this.cbxHTML_Format.Location = new System.Drawing.Point(59, 1);
+            this.cbxHTML_Format.Name = "cbxHTML_Format";
+            this.cbxHTML_Format.Size = new System.Drawing.Size(86, 21);
+            this.cbxHTML_Format.TabIndex = 2;
+            this.cbxHTML_Format.Text = "None";
+            // 
+            // kryptonLabel2
+            // 
+            this.kryptonLabel2.Location = new System.Drawing.Point(16, 28);
+            this.kryptonLabel2.Name = "kryptonLabel2";
+            this.kryptonLabel2.Size = new System.Drawing.Size(41, 20);
+            this.kryptonLabel2.TabIndex = 1;
+            this.kryptonLabel2.Values.Text = "Font :";
+            // 
+            // kryptonLabel1
+            // 
+            this.kryptonLabel1.Location = new System.Drawing.Point(3, 3);
+            this.kryptonLabel1.Name = "kryptonLabel1";
+            this.kryptonLabel1.Size = new System.Drawing.Size(55, 20);
+            this.kryptonLabel1.TabIndex = 0;
+            this.kryptonLabel1.Values.Text = "Format :";
+            // 
+            // tbxCSS
+            // 
+            this.tbxCSS.Controls.Add(this.kryptonPanel3);
+            this.tbxCSS.Location = new System.Drawing.Point(1, 19);
+            this.tbxCSS.Name = "tbxCSS";
+            this.tbxCSS.Padding = new System.Windows.Forms.Padding(3);
+            this.tbxCSS.Size = new System.Drawing.Size(619, 67);
+            this.tbxCSS.TabIndex = 1;
+            this.tbxCSS.Text = "CSS";
+            this.tbxCSS.UseVisualStyleBackColor = true;
+            // 
+            // kryptonPanel3
+            // 
+            this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel3.Location = new System.Drawing.Point(3, 3);
+            this.kryptonPanel3.Name = "kryptonPanel3";
+            this.kryptonPanel3.Size = new System.Drawing.Size(613, 61);
+            this.kryptonPanel3.TabIndex = 0;
+            // 
             // File
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -981,24 +1080,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).EndInit();
             this.kryptonPanel.ResumeLayout(false);
             this.kryptonPanel.PerformLayout();
-            this.tbcMain.ResumeLayout(false);
-            this.tbxCode.ResumeLayout(false);
-            this.tbxPreview.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            this.tbcPreview.ResumeLayout(false);
-            this.tbxTrident.ResumeLayout(false);
             this.cmxWbxTrident.ResumeLayout(false);
-            this.tbxGecko.ResumeLayout(false);
-            this.tbxGecko.PerformLayout();
-            this.tbxWebkit.ResumeLayout(false);
-            this.tbxWebkit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlToolBoxes)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCSS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHTML)).EndInit();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
+            this.tbcMain.ResumeLayout(false);
+            this.tbxCode.ResumeLayout(false);
+            this.tbxPreview.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
+            this.kryptonPanel4.ResumeLayout(false);
+            this.kryptonPanel4.PerformLayout();
+            this.tbcPreview.ResumeLayout(false);
+            this.tbxTrident.ResumeLayout(false);
+            this.tbxGecko.ResumeLayout(false);
+            this.tbxGecko.PerformLayout();
+            this.tbxWebkit.ResumeLayout(false);
+            this.tbxWebkit.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.tablessControl1.ResumeLayout(false);
             this.tbxHTML.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
@@ -1015,10 +1121,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbxHTML_Format)).EndInit();
             this.tbxCSS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCSS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHTML)).EndInit();
-            this.toolStrip3.ResumeLayout(false);
-            this.toolStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1075,7 +1177,7 @@
         private System.Windows.Forms.TabPage tbxHTML;
         private System.Windows.Forms.TabPage tbxCSS;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonColorButton kryptonColorButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonColorButton btnHTML_Color;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cbxHTML_Style;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
@@ -1108,6 +1210,11 @@
         private System.Windows.Forms.ToolStripMenuItem previewToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip cmxWbxTrident;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripDropDownButton btnRender;
+        private System.Windows.Forms.ToolStripMenuItem btnRenderTrident;
+        private System.Windows.Forms.ToolStripMenuItem btnRenderGecko;
+        private System.Windows.Forms.ToolStripMenuItem btnRenderWebkit;
 
     }
 }

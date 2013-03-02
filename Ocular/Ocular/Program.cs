@@ -22,7 +22,7 @@ namespace Ocular
             else
             {
                 //Application.Run(new Startup());
-                Application.Run(new TabForms.File());
+                Application.Run(new TabForms.File(Language.ASPNET));
             }
         }
     }

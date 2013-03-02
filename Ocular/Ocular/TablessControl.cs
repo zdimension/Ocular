@@ -9,7 +9,7 @@ namespace Ocular
 {
     class TablessControl : TabControl
     {
-        protected override void WndProc(ref Message m)
+        /*protected override void WndProc(ref Message m)
         {
             if (m.Msg == 0x1328 && !DesignMode)
             {
@@ -31,7 +31,7 @@ namespace Ocular
                 Marshal.StructureToPtr(rc, m.LParam, true);
             }
             //MyBase.WndProc(m)
-        }
+        }*/
 
         private const Int32 TCM_FIRST = 0x1300;
         private const Int32 TCM_ADJUSTRECT = (TCM_FIRST + 40);
