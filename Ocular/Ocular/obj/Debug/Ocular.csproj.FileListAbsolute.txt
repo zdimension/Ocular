@@ -1,0 +1,33 @@
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\bin\Debug\Ocular.exe.config
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\bin\Debug\Ocular.exe
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\bin\Debug\Ocular.pdb
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.csprojResolveAssemblyReference.cache
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.frmMain.resources
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.frmDocument.resources
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.exe
+c:\users\duy\documents\visual studio 2012\Projects\Ocular\Ocular\obj\Debug\Ocular.pdb
+C:\Users\Duy\documents\visual studio 2012\Projects\Ocular\Ocular\bin\Debug\AC.ExtendedRenderer.Toolkit.dll
+C:\Users\Duy\documents\visual studio 2012\Projects\Ocular\Ocular\bin\Debug\MdiTabControl.pdb
+E:\Projects\Ocular\Ocular\bin\Debug\Ocular.exe.config
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.exe
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.pdb
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.csprojResolveAssemblyReference.cache
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.frmMain.resources
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.frmDocument.resources
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
+E:\Projects\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\Ocular.exe.config
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.exe
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.pdb
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\Ocular.exe
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\Ocular.pdb
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\AC.ExtendedRenderer.Toolkit.dll
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\MdiTabControl.pdb
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.csprojResolveAssemblyReference.cache
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.frmMain.resources
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.frmDocument.resources
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
+E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
+E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\MdiTabControl.dll

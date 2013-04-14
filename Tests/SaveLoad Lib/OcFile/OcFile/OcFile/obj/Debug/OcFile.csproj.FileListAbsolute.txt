@@ -1,8 +1,0 @@
-C:\Users\lam.000\AppData\Local\Temporary Projects\OcFile\bin\Debug\OcFile.dll
-C:\Users\lam.000\AppData\Local\Temporary Projects\OcFile\bin\Debug\OcFile.pdb
-C:\Users\lam.000\AppData\Local\Temporary Projects\OcFile\obj\Debug\OcFile.dll
-C:\Users\lam.000\AppData\Local\Temporary Projects\OcFile\obj\Debug\OcFile.pdb
-E:\Ocular\SaveLoad Lib\OcFile\OcFile\OcFile\bin\Debug\OcFile.dll
-E:\Ocular\SaveLoad Lib\OcFile\OcFile\OcFile\bin\Debug\OcFile.pdb
-E:\Ocular\SaveLoad Lib\OcFile\OcFile\OcFile\obj\Debug\OcFile.dll
-E:\Ocular\SaveLoad Lib\OcFile\OcFile\OcFile\obj\Debug\OcFile.pdb

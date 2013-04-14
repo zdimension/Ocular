@@ -1,7 +1,0 @@
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\bin\Debug\LoadTester.exe
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\bin\Debug\LoadTester.pdb
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\bin\Debug\OcFile.dll
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\bin\Debug\OcFile.pdb
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\obj\x86\Debug\LoadTester.csprojResolveAssemblyReference.cache
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\obj\x86\Debug\LoadTester.exe
-C:\Users\lam.000\AppData\Local\Temporary Projects\LoadTester\obj\x86\Debug\LoadTester.pdb

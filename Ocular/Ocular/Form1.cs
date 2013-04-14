@@ -5,31 +5,26 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Ocular
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }
-        public void NewProject()
-        {
-            tabControl1.TabPages.Add(new ProjectPage());
-        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl1.TabPages.Add(new MainPage());
-            tabControl1.TabPages[0].CloseButtonVisible = false;
-            tabControl1.TabIconSize = new Size(0, 0);
-            
+
         }
 
-        private void Form1_Click(object sender, EventArgs e)
+        private void PropertiesCollapse_Click(object sender, EventArgs e)
         {
-            
+          
         }
     }
 }

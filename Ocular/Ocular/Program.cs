@@ -15,15 +15,7 @@ namespace Ocular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (global::Ocular.Properties.Settings.Default.DontShowStartupWindow)
-            {
-                Application.Run(new Working());
-            }
-            else
-            {
-                //Application.Run(new Startup());
-                Application.Run(new TabForms.File(Language.ASPNET));
-            }
+            Application.Run(new frmMain());
         }
     }
 }
