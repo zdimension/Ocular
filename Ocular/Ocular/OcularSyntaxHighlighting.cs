@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Drawing;
+using ScintillaNET;
 
 #endregion
 
@@ -42,9 +43,9 @@ namespace Ocular
         {
         }
 
-        public OcularSyntaxHighlighting(string type, RichTextBox richTextBox)
+        public OcularSyntaxHighlighting(string type, Scintilla scintilla)
         {
-            SetGeneralHighlighting(type, richTextBox);
+            this.SetGeneralHighlighting(type, scintilla);
         }
 
         #endregion
@@ -54,12 +55,12 @@ namespace Ocular
         /// Will throw error if type is not found
         /// </summary>
         /// <param name="type"></param>
-        public void SetGeneralHighlighting(string type, RichTextBox richTextBox)
+        public void SetGeneralHighlighting(string type, Scintilla scintilla)
         {
             switch (type)
             {
                 case "html":
-                    this.SetHtmlHighlighting(richTextBox);
+                    this.SetLanguage("html", scintilla);
                     this.language = "html";
                     break;
                 default:
@@ -69,42 +70,13 @@ namespace Ocular
         }
 
         /// <summary>
-        /// Sets html highlighting for the specified Systems.Windows.Forms.RichTextBox
+        /// Sets the specified language for the specified ScintillaNET.Scintilla
         /// </summary>
         /// <param name="richTextBox"></param>
-        /// 
-        //NOTE: Not the best...it would be better to use a control like Scintilla to achieve this goal.
-        private void SetHtmlHighlighting(RichTextBox richTextBox)
+        private void SetLanguage(string type, Scintilla scintilla)
         {
-            int matchIndex = 0;
-            int matchLength;
-            int index;
-
-            string[] keywords = { "!doctype", "a" ,"button" ,"code" ,"font" ,"form" ,"h" ,"h1" ,"h2" ,"h3" ,"h4" ,"h5" ,"h6" ,"head" ,"html" ,"img" ,"input" ,"link" ,"href" ,"title" };
-            string text = richTextBox.Text;
-
-            //Check if the array 'keywords' contains the string 'text' (text updates everytime the richtextbox text is changed since we call this function on that event)
-            var matches = keywords.Where(s => text.Contains(s));
-
-            if (matches.Count() < 1)
-                return;
-
-            int cursorPosition = richTextBox.SelectionStart;
-
-            foreach (string c in matches)
-            {
-                matchLength = c.Length;
-                index = richTextBox.Text.IndexOf(c, richTextBox.SelectionStart - matchLength);
-
-                if (index != -1)
-                {
-                    richTextBox.Select(index, matchLength);
-                    richTextBox.SelectionColor = Color.Blue;
-
-                    richTextBox.SelectionStart = cursorPosition;
-                    richTextBox.SelectionColor = Color.Black;
-                }
-            }
+            scintilla.ConfigurationManager.Language = type;
+            scintilla.ConfigurationManager.Configure();
         }
     }
 }

@@ -10,8 +10,9 @@ using System.Windows.Forms;
 namespace Ocular
 {
     public partial class frmMain : Form
-
     {
+        private Document.DocumentSettings docSettings = new Document.DocumentSettings();
+
         public frmMain()
         {
             InitializeComponent();
@@ -20,8 +21,7 @@ namespace Ocular
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            frmDocument nform = new frmDocument();
-            tabControl1.TabPages.Add(nform);
+            this.docSettings.AddDocument(tabControl1, "Untitled");
         }
               
         private void TabControl1_GetTabRegion(object sender, MdiTabControl.TabControl.GetTabRegionEventArgs e)
@@ -33,6 +33,16 @@ namespace Ocular
         private void PropertiesCollapse_Click(object sender, EventArgs e)
         {
           
+        }
+
+        //Show line numbers event
+        //If clicked, shows the number of each line for Scintilla
+        private void showLineNumbersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
         }
     }
 }

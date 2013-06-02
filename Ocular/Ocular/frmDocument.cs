@@ -9,11 +9,36 @@ using System.Windows.Forms;
 
 namespace Ocular
 {
-    public partial class frmDocument : Form
+    namespace Document
     {
-        public frmDocument()
+        public partial class frmDocument : Form
         {
-            InitializeComponent();
+            #region Fields
+
+            private string name;
+
+            #endregion
+
+            #region Properties
+
+            public string Name
+            {
+                get
+                {
+                    return name;
+                }
+                set
+                {
+                    this.name = value;
+                }
+            }
+
+            #endregion
+
+            public frmDocument()
+            {
+                InitializeComponent();
+            }
         }
     }
 }

@@ -36,6 +36,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showLineNumbersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,14 +46,15 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.tabControl1 = new MdiTabControl.TabControl();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabControl1 = new MdiTabControl.TabControl();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -417,6 +419,8 @@
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -429,9 +433,18 @@
             // 
             // viewToolStripMenuItem
             // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showLineNumbersToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
+            // 
+            // showLineNumbersToolStripMenuItem
+            // 
+            this.showLineNumbersToolStripMenuItem.Name = "showLineNumbersToolStripMenuItem";
+            this.showLineNumbersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showLineNumbersToolStripMenuItem.Text = "Show Line Numbers";
+            this.showLineNumbersToolStripMenuItem.Click += new System.EventHandler(this.showLineNumbersToolStripMenuItem_Click);
             // 
             // insertToolStripMenuItem
             // 
@@ -504,6 +517,33 @@
             this.toolStripStatusLabel2.Spring = true;
             this.toolStripStatusLabel2.Text = "   ";
             // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = global::Ocular.Properties.Resources.mouse_select_left;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 23);
+            this.toolStripButton4.Text = "Select tool";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Ocular.Properties.Resources.hand;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 23);
+            this.toolStripButton1.Text = "Select tool";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::Ocular.Properties.Resources.zoom;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 23);
+            this.toolStripButton2.Text = "Select tool";
+            // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.AutoSize = false;
@@ -511,6 +551,31 @@
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(55, 25);
             this.toolStripComboBox1.Text = "100%";
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton1.Image = global::Ocular.Properties.Resources.monitor;
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 23);
+            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
+            this.toolStripStatusLabel3.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+            this.toolStripStatusLabel3.Image = global::Ocular.Properties.Resources.print_size;
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(74, 20);
+            this.toolStripStatusLabel3.Text = "1024x768";
+            // 
+            // toolStripStatusLabel4
+            // 
+            this.toolStripStatusLabel4.Image = global::Ocular.Properties.Resources.weight;
+            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
+            this.toolStripStatusLabel4.Size = new System.Drawing.Size(85, 20);
+            this.toolStripStatusLabel4.Text = "235K / 2 sec";
             // 
             // tabControl1
             // 
@@ -535,57 +600,12 @@
             this.tabControl1.TabMinimumWidth = 150;
             this.tabControl1.TabTop = 2;
             // 
-            // toolStripButton4
+            // newToolStripMenuItem
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Ocular.Properties.Resources.mouse_select_left;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 20);
-            this.toolStripButton4.Text = "Select tool";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Ocular.Properties.Resources.hand;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 20);
-            this.toolStripButton1.Text = "Select tool";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Ocular.Properties.Resources.zoom;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 20);
-            this.toolStripButton2.Text = "Select tool";
-            // 
-            // toolStripDropDownButton1
-            // 
-            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripDropDownButton1.Image = global::Ocular.Properties.Resources.monitor;
-            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 20);
-            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Right;
-            this.toolStripStatusLabel3.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
-            this.toolStripStatusLabel3.Image = global::Ocular.Properties.Resources.print_size;
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(74, 20);
-            this.toolStripStatusLabel3.Text = "1024x768";
-            // 
-            // toolStripStatusLabel4
-            // 
-            this.toolStripStatusLabel4.Image = global::Ocular.Properties.Resources.weight;
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(85, 16);
-            this.toolStripStatusLabel4.Text = "235K / 2 sec";
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -636,6 +656,8 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
+        private System.Windows.Forms.ToolStripMenuItem showLineNumbersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
     }
 }
 

@@ -15,7 +15,13 @@ namespace Ocular
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            //Must be instantiated after we set compatible text rendering default
+            documentForm = new Ocular.Document.frmDocument();
+            Application.Run(mainForm = new frmMain());
         }
+
+        //So we can access contents from other classes without having to instantiate new objects everytime
+        public static frmMain mainForm;
+        public static Ocular.Document.frmDocument documentForm;
     }
 }
