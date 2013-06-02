@@ -11,7 +11,23 @@ namespace Ocular
 {
     public partial class frmMain : Form
     {
+        #region Fields
+
         private Document.DocumentSettings docSettings = new Document.DocumentSettings();
+
+        #endregion
+
+        #region Properties
+
+        public ScintillaNET.Scintilla CurrentScintilla
+        {
+            get
+            {
+                return docSettings.DocsOpen[tabControl1.TabPages.SelectedIndex()].scintilla1;
+            }
+        }
+
+        #endregion
 
         public frmMain()
         {
@@ -39,10 +55,13 @@ namespace Ocular
         //If clicked, shows the number of each line for Scintilla
         private void showLineNumbersToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ScintillaViewSettings view = new ScintillaViewSettings();
+            view.ShowLines(true, CurrentScintilla);
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.docSettings.AddDocument(tabControl1, "Untitled");
         }
     }
 }

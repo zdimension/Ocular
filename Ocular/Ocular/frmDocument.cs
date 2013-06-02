@@ -39,6 +39,10 @@ namespace Ocular
             {
                 InitializeComponent();
             }
+
+            private void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
+            {
+            }
         }
     }
 }

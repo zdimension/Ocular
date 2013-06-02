@@ -1,4 +1,7 @@
-﻿#region Using Directives
+﻿//Author: Rohan
+//Date: 6/2/2013
+
+#region Using Directives
 
 using System;
 using System.Collections.Generic;
@@ -16,6 +19,7 @@ namespace Ocular
             #region Fields
 
             private List<frmDocument> docsOpen = new List<frmDocument>();
+            private ScintillaAutoComplete autoComplete = new ScintillaAutoComplete();
 
             #endregion
 
@@ -42,10 +46,18 @@ namespace Ocular
             public void AddDocument(MdiTabControl.TabControl tabControl, string docName)
             {
                 frmDocument document = new frmDocument();
+
+                document.scintilla1.CharAdded += scintilla1_CharAdded;
                 document.Name = docName;
+
                 tabControl.TabPages.Add(document);
 
                 this.docsOpen.Add(document);
+            }
+
+            void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
+            {
+                autoComplete.EnableAutoComplete(true, Program.mainForm.CurrentScintilla);
             }
         }
     }
