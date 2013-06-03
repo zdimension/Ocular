@@ -43,6 +43,13 @@ namespace Ocular
             private void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
             {
             }
+
+            //Quick Save
+            private void saveButton_Click(object sender, EventArgs e)
+            {
+                FileOpenSave quickSave = new FileOpenSave();
+                quickSave.QuickFileSaveAs();
+            }
         }
     }
 }

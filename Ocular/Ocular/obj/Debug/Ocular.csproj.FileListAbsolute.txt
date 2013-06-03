@@ -31,3 +31,15 @@ E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.frmDocument.resources
 E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
 E:\Programming\Projects\C#\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
 E:\Programming\Projects\C#\Ocular\Ocular\bin\Debug\MdiTabControl.dll
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\bin\Debug\Ocular.exe.config
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.exe
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.pdb
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\bin\Debug\Ocular.exe
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\bin\Debug\Ocular.pdb
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\bin\Debug\ScintillaNET.dll
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\bin\Debug\MdiTabControl.pdb
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.csprojResolveAssemblyReference.cache
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.frmMain.resources
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.Document.frmDocument.resources
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
+C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache

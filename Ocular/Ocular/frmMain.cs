@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Ocular.Document;
 
 namespace Ocular
 {
@@ -14,6 +15,14 @@ namespace Ocular
         #region Fields
 
         private Document.DocumentSettings docSettings = new Document.DocumentSettings();
+
+        public Document.DocumentSettings DocumentSettings
+        {
+            get
+            {
+                return docSettings;
+            }
+        }
 
         #endregion
 
@@ -27,6 +36,14 @@ namespace Ocular
             }
         }
 
+        public MdiTabControl.TabControl TabControl1
+        {
+            get
+            {
+                return tabControl1;
+            }
+        }
+
         #endregion
 
         public frmMain()
@@ -37,11 +54,13 @@ namespace Ocular
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.docSettings.AddDocument(tabControl1, "Untitled");
+            this.docSettings.AddDocument(tabControl1, "Untitled", "Untitled");
         }
               
         private void TabControl1_GetTabRegion(object sender, MdiTabControl.TabControl.GetTabRegionEventArgs e)
         {
+            //???
+            //-Ro
             e.Points[1] = new Point(0, 0);
             e.Points[3] = new Point(e.TabWidth - 1, 0);
         }
@@ -59,9 +78,23 @@ namespace Ocular
             view.ShowLines(true, CurrentScintilla);
         }
 
+        //New File
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.docSettings.AddDocument(tabControl1, "Untitled");
+            this.docSettings.AddDocument(tabControl1, "Untitled", "Untitled");
+        }
+
+        //Open File
+        private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FileOpenSave open = new FileOpenSave();
+            open.OpenFile(tabControl1);
+        }
+
+        private void saveFileAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FileOpenSave open = new FileOpenSave();
+            open.SaveFileAs();
         }
     }
 }

@@ -119,8 +119,8 @@
             this.Placeholder = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripSplitButton2 = new System.Windows.Forms.ToolStripSplitButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.saveButton = new System.Windows.Forms.ToolStripButton();
+            this.saveAllButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -129,7 +129,7 @@
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton14 = new System.Windows.Forms.ToolStripButton();
+            this.testButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
@@ -191,9 +191,19 @@
             // scintilla1
             // 
             this.scintilla1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.scintilla1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scintilla1.Location = new System.Drawing.Point(0, 23);
             this.scintilla1.Name = "scintilla1";
             this.scintilla1.Size = new System.Drawing.Size(589, 526);
+            this.scintilla1.Styles.BraceBad.Size = 9F;
+            this.scintilla1.Styles.BraceLight.Size = 9F;
+            this.scintilla1.Styles.ControlChar.Size = 9F;
+            this.scintilla1.Styles.Default.BackColor = System.Drawing.SystemColors.Window;
+            this.scintilla1.Styles.Default.Size = 9F;
+            this.scintilla1.Styles.IndentGuide.Size = 9F;
+            this.scintilla1.Styles.LastPredefined.Size = 9F;
+            this.scintilla1.Styles.LineNumber.Size = 9F;
+            this.scintilla1.Styles.Max.Size = 9F;
             this.scintilla1.TabIndex = 22;
             this.scintilla1.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.scintilla1_CharAdded);
             // 
@@ -1066,8 +1076,8 @@
             this.Placeholder,
             this.toolStripSplitButton1,
             this.toolStripSplitButton2,
-            this.toolStripButton1,
-            this.toolStripButton2,
+            this.saveButton,
+            this.saveAllButton,
             this.toolStripSeparator1,
             this.toolStripButton3,
             this.toolStripButton4,
@@ -1076,7 +1086,7 @@
             this.toolStripButton5,
             this.toolStripButton6,
             this.toolStripButton7,
-            this.toolStripButton14,
+            this.testButton,
             this.toolStripSeparator3,
             this.toolStripButton10,
             this.toolStripButton11,
@@ -1118,23 +1128,24 @@
             this.toolStripSplitButton2.Size = new System.Drawing.Size(32, 29);
             this.toolStripSplitButton2.Text = "toolStripSplitButton1";
             // 
-            // toolStripButton1
+            // saveButton
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Ocular.Properties.Resources.save_document;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 29);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.saveButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveButton.Image = global::Ocular.Properties.Resources.save_document;
+            this.saveButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(23, 29);
+            this.saveButton.Text = "Save";
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // toolStripButton2
+            // saveAllButton
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Ocular.Properties.Resources.save_all;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 29);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.saveAllButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveAllButton.Image = global::Ocular.Properties.Resources.save_all;
+            this.saveAllButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveAllButton.Name = "saveAllButton";
+            this.saveAllButton.Size = new System.Drawing.Size(23, 29);
+            this.saveAllButton.Text = "Save All";
             // 
             // toolStripSeparator1
             // 
@@ -1201,13 +1212,13 @@
             this.toolStripButton7.Size = new System.Drawing.Size(23, 29);
             this.toolStripButton7.Text = "Inspect";
             // 
-            // toolStripButton14
+            // testButton
             // 
-            this.toolStripButton14.Image = global::Ocular.Properties.Resources.control_play_blue;
-            this.toolStripButton14.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton14.Name = "toolStripButton14";
-            this.toolStripButton14.Size = new System.Drawing.Size(49, 29);
-            this.toolStripButton14.Text = "Test";
+            this.testButton.Image = global::Ocular.Properties.Resources.control_play_blue;
+            this.testButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.testButton.Name = "testButton";
+            this.testButton.Size = new System.Drawing.Size(49, 29);
+            this.testButton.Text = "Test";
             // 
             // toolStripSeparator3
             // 
@@ -1410,8 +1421,8 @@
             private System.Windows.Forms.ToolStripLabel Placeholder;
             private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton1;
             private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton2;
-            private System.Windows.Forms.ToolStripButton toolStripButton1;
-            private System.Windows.Forms.ToolStripButton toolStripButton2;
+            private System.Windows.Forms.ToolStripButton saveButton;
+            private System.Windows.Forms.ToolStripButton saveAllButton;
             private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
             private System.Windows.Forms.ToolStripButton toolStripButton3;
             private System.Windows.Forms.ToolStripButton toolStripButton4;
@@ -1448,7 +1459,7 @@
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton7;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton6;
             private System.Windows.Forms.ListView listView1;
-            private System.Windows.Forms.ToolStripButton toolStripButton14;
+            private System.Windows.Forms.ToolStripButton testButton;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton17;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton16;
             private System.Windows.Forms.ToolStrip toolStrip2;

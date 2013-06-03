@@ -19,25 +19,25 @@ namespace Ocular
 
             //HTML Keywords
             //Feel free to add more
-            keywords.Add("button");
-            keywords.Add("code");
-            keywords.Add("font");
-            keywords.Add("form");
-            keywords.Add("h");
-            keywords.Add("h1");
-            keywords.Add("h2");
-            keywords.Add("h3");
-            keywords.Add("h4");
-            keywords.Add("h5");
-            keywords.Add("h6");
-            keywords.Add("head");
-            keywords.Add("html");
-            keywords.Add("img");
-            keywords.Add("input");
-            keywords.Add("link");
-            keywords.Add("href");
-            keywords.Add("src");
-            keywords.Add("title");
+            keywords.Add(HTMLTags.button);
+            keywords.Add(HTMLTags.code);
+            keywords.Add(HTMLTags.font);
+            keywords.Add(HTMLTags.form);
+            keywords.Add(HTMLTags.h);
+            keywords.Add(HTMLTags.h1);
+            keywords.Add(HTMLTags.h2);
+            keywords.Add(HTMLTags.h3);
+            keywords.Add(HTMLTags.h4);
+            keywords.Add(HTMLTags.h5);
+            keywords.Add(HTMLTags.h6);
+            keywords.Add(HTMLTags.head);
+            keywords.Add(HTMLTags.html);
+            keywords.Add(HTMLTags.img);
+            keywords.Add(HTMLTags.input);
+            keywords.Add(HTMLTags.link);
+            keywords.Add(HTMLTags.href);
+            keywords.Add(HTMLTags.src);
+            keywords.Add(HTMLTags.title);
         }
 
         public void EnableAutoComplete(bool enable, Scintilla scintilla)

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 #endregion
 
@@ -43,21 +44,41 @@ namespace Ocular
 
             #endregion
 
-            public void AddDocument(MdiTabControl.TabControl tabControl, string docName)
+            public void AddDocument(MdiTabControl.TabControl tabControl, string fullName, string displayName)
             {
                 frmDocument document = new frmDocument();
 
+                int index;
+
                 document.scintilla1.CharAdded += scintilla1_CharAdded;
-                document.Name = docName;
+                document.FormClosing += document_FormClosing;
+
+                document.Name = fullName;
+                document.Text = displayName;
 
                 tabControl.TabPages.Add(document);
-
                 this.docsOpen.Add(document);
+
+                index = tabControl.TabPages.get_IndexOf(document);
+
+                tabControl.TabIndex = index;
+            }
+
+            //Fixes a bug where newly opened files won't show after a file has been closed.
+            //-Ro
+            void document_FormClosing(object sender, FormClosingEventArgs e)
+            {
+                DocsOpen.RemoveAt(Program.mainForm.TabControl1.TabPages.SelectedIndex());
             }
 
             void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
             {
-                autoComplete.EnableAutoComplete(true, Program.mainForm.CurrentScintilla);
+                string text = Program.mainForm.CurrentScintilla.Text;
+                char lastChar = text[text.Length - 1];
+
+                //Only show the autocomplete if our last char is a letter
+                if( char.IsLetter(lastChar) )
+                    autoComplete.EnableAutoComplete(true, Program.mainForm.CurrentScintilla);
             }
         }
     }

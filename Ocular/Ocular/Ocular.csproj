@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocumentSettings.cs" />
+    <Compile Include="FileOpenSave.cs" />
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
     <Compile Include="frmDocument.Designer.cs">
       <DependentUpon>frmDocument.cs</DependentUpon>
     </Compile>
+    <Compile Include="HTMLTags.cs" />
     <Compile Include="OcularSyntaxHighlighting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
