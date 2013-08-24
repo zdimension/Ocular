@@ -54,3 +54,6 @@ C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.exe
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.dll
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.xml

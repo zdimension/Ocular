@@ -47,7 +47,7 @@ namespace Ocular
                 string shortFileName;
 
                 //Scintilla Component
-                Scintilla currentScintilla;
+                FastColoredTextBoxNS.FastColoredTextBox currentBox;
                 //Document Settings class
                 DocumentSettings docSettings;
 
@@ -62,13 +62,13 @@ namespace Ocular
                     docSettings.AddDocument(tabControl, filename, shortFileName);
                     //Now we can save our current Scintilla component since we change the index after adding
                     //a new document
-                    currentScintilla = Program.mainForm.CurrentScintilla;
+                    currentBox = Program.mainForm.CurrentBox;
 
                     //Read the text from the selected file
                     fileText = File.ReadAllText(filename);
 
                     //Set our Scintilla File Text
-                    currentScintilla.Text = fileText;
+                    currentBox.Text = fileText;
                 }
             }
 
@@ -86,16 +86,17 @@ namespace Ocular
 
                 //Scintilla Component
                 Scintilla currentScintilla;
+                FastColoredTextBoxNS.FastColoredTextBox currentBox;
                 DocumentSettings docSettings;
 
                 if (result == OK)
                 {
                     filename = saveFileDialog.FileName;
 
-                    currentScintilla = Program.mainForm.CurrentScintilla;
+                    currentBox = Program.mainForm.CurrentBox;
 
                     //Read the text from the selected file
-                    fileText = currentScintilla.Text;
+                    fileText = currentBox.Text;
 
                     File.WriteAllText(filename, fileText);
 
@@ -113,13 +114,14 @@ namespace Ocular
                 DocumentSettings docSettings = Program.mainForm.DocumentSettings;
 
                 string name = docSettings.DocsOpen[index].Name;
-                Scintilla currentScintilla = docSettings.DocsOpen[index].scintilla1;
+                //Scintilla currentScintilla = docSettings.DocsOpen[index].scintilla1;
+                FastColoredTextBoxNS.FastColoredTextBox currentBox = docSettings.DocsOpen[index].fastTxt;
 
                 //Even if a file is named 'Untitled' without the extension, the docSettings.DocsOpen[index].Name
                 //has always has an extension so only non-saved files will have a name of 'Untitled'
                 if (name != "Untitled")
                 {
-                    File.WriteAllText(name, currentScintilla.Text);
+                    File.WriteAllText(name, currentBox.Text);
                 }
             }
         }

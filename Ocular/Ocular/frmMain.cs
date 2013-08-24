@@ -28,11 +28,19 @@ namespace Ocular
 
         #region Properties
 
-        public ScintillaNET.Scintilla CurrentScintilla
+        /*public ScintillaNET.Scintilla CurrentScintilla
         {
             get
             {
                 return docSettings.DocsOpen[tbxMain.TabPages.SelectedIndex()].scintilla1;
+            }
+        }*/
+
+        public FastColoredTextBoxNS.FastColoredTextBox CurrentBox
+        {
+            get
+            {
+                return docSettings.DocsOpen[tbxMain.TabPages.SelectedIndex()].fastTxt;
             }
         }
 
@@ -55,6 +63,7 @@ namespace Ocular
         private void Form1_Load(object sender, EventArgs e)
         {
             this.docSettings.AddDocument(tbxMain, "Untitled", "Untitled");
+            showLineNumbersToolStripMenuItem.Checked = CurrentBox.ShowLineNumbers;
         }
               
         private void TabControl1_GetTabRegion(object sender, MdiTabControl.TabControl.GetTabRegionEventArgs e)
@@ -74,8 +83,10 @@ namespace Ocular
         //If clicked, shows the number of each line for Scintilla
         private void showLineNumbersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ScintillaViewSettings view = new ScintillaViewSettings();
-            view.ShowLines(true, CurrentScintilla);
+            //ScintillaViewSettings view = new ScintillaViewSettings();
+            //view.ShowLines(true, CurrentScintilla);
+            CurrentBox.ShowLineNumbers = !CurrentBox.ShowLineNumbers;
+            showLineNumbersToolStripMenuItem.Checked = CurrentBox.ShowLineNumbers;
         }
 
         //New File

@@ -50,7 +50,7 @@ namespace Ocular
 
                 int index;
 
-                document.scintilla1.CharAdded += scintilla1_CharAdded;
+                //document.scintilla1.CharAdded += scintilla1_CharAdded;
                 document.FormClosing += document_FormClosing;
 
                 document.Name = fullName;
@@ -71,7 +71,7 @@ namespace Ocular
                 DocsOpen.RemoveAt(Program.mainForm.TabControl1.TabPages.SelectedIndex());
             }
 
-            void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
+            /*void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
             {
                 string text = Program.mainForm.CurrentScintilla.Text;
                 char lastChar = text[text.Length - 1];
@@ -79,7 +79,7 @@ namespace Ocular
                 //Only show the autocomplete if our last char is a letter
                 if( char.IsLetter(lastChar) )
                     autoComplete.EnableAutoComplete(true, Program.mainForm.CurrentScintilla);
-            }
+            }*/
         }
     }
 }

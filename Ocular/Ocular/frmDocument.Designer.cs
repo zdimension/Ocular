@@ -33,7 +33,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocument));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.scintilla1 = new ScintillaNET.Scintilla();
+            this.fastTxt = new FastColoredTextBoxNS.FastColoredTextBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
@@ -65,6 +65,10 @@
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.buttonSpecHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.treeView1 = new System.Windows.Forms.TreeView();
@@ -74,14 +78,17 @@
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.buttonSpecHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.kryptonHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup9 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup10 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.kryptonHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.buttonSpecHeaderGroup7 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.buttonSpecHeaderGroup8 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.buttonSpecHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.buttonSpecHeaderGroup6 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.kryptonCheckButton17 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton16 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -92,9 +99,6 @@
             this.kryptonCheckButton6 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.kryptonHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.buttonSpecHeaderGroup7 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.buttonSpecHeaderGroup8 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.panel13 = new System.Windows.Forms.Panel();
             this.kryptonCheckButton12 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -104,16 +108,12 @@
             this.kryptonCheckButton9 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton10 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton11 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.buttonSpecHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.buttonSpecHeaderGroup6 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.panel9 = new System.Windows.Forms.Panel();
             this.kryptonCheckButton13 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.kryptonListView1 = new AC.ExtendedRenderer.Toolkit.KryptonListView();
             this.kryptonDropButton1 = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.ToolbarSeperator = new System.Windows.Forms.Panel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.Placeholder = new System.Windows.Forms.ToolStripLabel();
@@ -143,40 +143,36 @@
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.panel17 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastTxt)).BeginInit();
             this.toolStrip2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).BeginInit();
-            this.kryptonHeaderGroup2.Panel.SuspendLayout();
             this.kryptonHeaderGroup2.SuspendLayout();
-            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5.Panel)).BeginInit();
-            this.kryptonHeaderGroup5.Panel.SuspendLayout();
             this.kryptonHeaderGroup5.SuspendLayout();
-            this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4.Panel)).BeginInit();
-            this.kryptonHeaderGroup4.Panel.SuspendLayout();
             this.kryptonHeaderGroup4.SuspendLayout();
-            this.panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).BeginInit();
-            this.kryptonHeaderGroup3.Panel.SuspendLayout();
             this.kryptonHeaderGroup3.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel9.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.scintilla1);
+            this.panel3.Controls.Add(this.fastTxt);
             this.panel3.Controls.Add(this.panel18);
             this.panel3.Controls.Add(this.panel16);
             this.panel3.Controls.Add(this.toolStrip2);
@@ -188,24 +184,25 @@
             this.panel3.Size = new System.Drawing.Size(589, 575);
             this.panel3.TabIndex = 18;
             // 
-            // scintilla1
+            // fastTxt
             // 
-            this.scintilla1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scintilla1.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scintilla1.Location = new System.Drawing.Point(0, 23);
-            this.scintilla1.Name = "scintilla1";
-            this.scintilla1.Size = new System.Drawing.Size(589, 526);
-            this.scintilla1.Styles.BraceBad.Size = 9F;
-            this.scintilla1.Styles.BraceLight.Size = 9F;
-            this.scintilla1.Styles.ControlChar.Size = 9F;
-            this.scintilla1.Styles.Default.BackColor = System.Drawing.SystemColors.Window;
-            this.scintilla1.Styles.Default.Size = 9F;
-            this.scintilla1.Styles.IndentGuide.Size = 9F;
-            this.scintilla1.Styles.LastPredefined.Size = 9F;
-            this.scintilla1.Styles.LineNumber.Size = 9F;
-            this.scintilla1.Styles.Max.Size = 9F;
-            this.scintilla1.TabIndex = 22;
-            this.scintilla1.CharAdded += new System.EventHandler<ScintillaNET.CharAddedEventArgs>(this.scintilla1_CharAdded);
+            this.fastTxt.AutoScrollMinSize = new System.Drawing.Size(25, 15);
+            this.fastTxt.BackBrush = null;
+            this.fastTxt.CharHeight = 15;
+            this.fastTxt.CharWidth = 7;
+            this.fastTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fastTxt.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.fastTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fastTxt.Font = new System.Drawing.Font("Consolas", 9F);
+            this.fastTxt.IsReplaceMode = false;
+            this.fastTxt.Language = FastColoredTextBoxNS.Language.HTML;
+            this.fastTxt.Location = new System.Drawing.Point(0, 23);
+            this.fastTxt.Name = "fastTxt";
+            this.fastTxt.Paddings = new System.Windows.Forms.Padding(0);
+            this.fastTxt.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastTxt.Size = new System.Drawing.Size(589, 526);
+            this.fastTxt.TabIndex = 0;
+            this.fastTxt.Zoom = 100;
             // 
             // panel18
             // 
@@ -472,10 +469,6 @@
             this.kryptonHeaderGroup2.Location = new System.Drawing.Point(0, 216);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             this.kryptonHeaderGroup2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
-            // kryptonHeaderGroup2.Panel
-            // 
-            this.kryptonHeaderGroup2.Panel.Controls.Add(this.panel7);
             this.kryptonHeaderGroup2.Size = new System.Drawing.Size(174, 216);
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup2.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
@@ -497,6 +490,47 @@
             // 
             this.buttonSpecHeaderGroup4.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             this.buttonSpecHeaderGroup4.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
+            // 
+            // kryptonHeaderGroup1
+            // 
+            this.kryptonHeaderGroup1.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
+            this.buttonSpecHeaderGroup1,
+            this.buttonSpecHeaderGroup2});
+            this.kryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
+            this.kryptonHeaderGroup1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(174, 216);
+            this.kryptonHeaderGroup1.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup1.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
+            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonHeaderGroup1.TabIndex = 16;
+            this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Folders";
+            this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
+            // 
+            // buttonSpecHeaderGroup1
+            // 
+            this.buttonSpecHeaderGroup1.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
+            this.buttonSpecHeaderGroup1.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
+            // 
+            // buttonSpecHeaderGroup2
+            // 
+            this.buttonSpecHeaderGroup2.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecHeaderGroup2.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.LightGray;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(174, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1, 575);
+            this.panel5.TabIndex = 21;
             // 
             // panel7
             // 
@@ -527,6 +561,7 @@
             // 
             this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.treeView1.LineColor = System.Drawing.Color.Empty;
             this.treeView1.Location = new System.Drawing.Point(0, 53);
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(172, 141);
@@ -596,47 +631,6 @@
             this.kryptonCheckButton1.TabIndex = 3;
             this.kryptonCheckButton1.Values.Text = "Tags";
             // 
-            // kryptonHeaderGroup1
-            // 
-            this.kryptonHeaderGroup1.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
-            this.buttonSpecHeaderGroup1,
-            this.buttonSpecHeaderGroup2});
-            this.kryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
-            this.kryptonHeaderGroup1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(174, 216);
-            this.kryptonHeaderGroup1.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup1.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup1.TabIndex = 16;
-            this.kryptonHeaderGroup1.ValuesPrimary.Heading = "Folders";
-            this.kryptonHeaderGroup1.ValuesPrimary.Image = null;
-            // 
-            // buttonSpecHeaderGroup1
-            // 
-            this.buttonSpecHeaderGroup1.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
-            this.buttonSpecHeaderGroup1.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
-            // 
-            // buttonSpecHeaderGroup2
-            // 
-            this.buttonSpecHeaderGroup2.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecHeaderGroup2.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.LightGray;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(174, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 575);
-            this.panel5.TabIndex = 21;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.kryptonHeaderGroup5);
@@ -659,10 +653,6 @@
             this.kryptonHeaderGroup5.Location = new System.Drawing.Point(1, 284);
             this.kryptonHeaderGroup5.Name = "kryptonHeaderGroup5";
             this.kryptonHeaderGroup5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
-            // kryptonHeaderGroup5.Panel
-            // 
-            this.kryptonHeaderGroup5.Panel.Controls.Add(this.panel11);
             this.kryptonHeaderGroup5.Size = new System.Drawing.Size(216, 216);
             this.kryptonHeaderGroup5.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup5.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
@@ -684,6 +674,79 @@
             // 
             this.buttonSpecHeaderGroup10.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
             this.buttonSpecHeaderGroup10.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
+            // 
+            // kryptonHeaderGroup4
+            // 
+            this.kryptonHeaderGroup4.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
+            this.buttonSpecHeaderGroup7,
+            this.buttonSpecHeaderGroup8});
+            this.kryptonHeaderGroup4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonHeaderGroup4.HeaderVisibleSecondary = false;
+            this.kryptonHeaderGroup4.Location = new System.Drawing.Point(1, 177);
+            this.kryptonHeaderGroup4.Name = "kryptonHeaderGroup4";
+            this.kryptonHeaderGroup4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(216, 107);
+            this.kryptonHeaderGroup4.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup4.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
+            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonHeaderGroup4.TabIndex = 18;
+            this.kryptonHeaderGroup4.ValuesPrimary.Heading = "Styles";
+            this.kryptonHeaderGroup4.ValuesPrimary.Image = null;
+            // 
+            // buttonSpecHeaderGroup7
+            // 
+            this.buttonSpecHeaderGroup7.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
+            this.buttonSpecHeaderGroup7.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
+            // 
+            // buttonSpecHeaderGroup8
+            // 
+            this.buttonSpecHeaderGroup8.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecHeaderGroup8.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
+            // 
+            // kryptonHeaderGroup3
+            // 
+            this.kryptonHeaderGroup3.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
+            this.buttonSpecHeaderGroup5,
+            this.buttonSpecHeaderGroup6});
+            this.kryptonHeaderGroup3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(1, 0);
+            this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
+            this.kryptonHeaderGroup3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(216, 177);
+            this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup3.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
+            this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonHeaderGroup3.TabIndex = 17;
+            this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Insert";
+            this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
+            // 
+            // buttonSpecHeaderGroup5
+            // 
+            this.buttonSpecHeaderGroup5.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
+            this.buttonSpecHeaderGroup5.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
+            // 
+            // buttonSpecHeaderGroup6
+            // 
+            this.buttonSpecHeaderGroup6.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
+            this.buttonSpecHeaderGroup6.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightGray;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1, 575);
+            this.panel4.TabIndex = 20;
             // 
             // panel11
             // 
@@ -793,42 +856,6 @@
             this.panel12.Size = new System.Drawing.Size(1, 194);
             this.panel12.TabIndex = 15;
             // 
-            // kryptonHeaderGroup4
-            // 
-            this.kryptonHeaderGroup4.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
-            this.buttonSpecHeaderGroup7,
-            this.buttonSpecHeaderGroup8});
-            this.kryptonHeaderGroup4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonHeaderGroup4.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup4.Location = new System.Drawing.Point(1, 177);
-            this.kryptonHeaderGroup4.Name = "kryptonHeaderGroup4";
-            this.kryptonHeaderGroup4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
-            // kryptonHeaderGroup4.Panel
-            // 
-            this.kryptonHeaderGroup4.Panel.Controls.Add(this.panel13);
-            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(216, 107);
-            this.kryptonHeaderGroup4.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup4.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup4.TabIndex = 18;
-            this.kryptonHeaderGroup4.ValuesPrimary.Heading = "Styles";
-            this.kryptonHeaderGroup4.ValuesPrimary.Image = null;
-            // 
-            // buttonSpecHeaderGroup7
-            // 
-            this.buttonSpecHeaderGroup7.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
-            this.buttonSpecHeaderGroup7.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
-            // 
-            // buttonSpecHeaderGroup8
-            // 
-            this.buttonSpecHeaderGroup8.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecHeaderGroup8.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
-            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.kryptonCheckButton12);
@@ -880,6 +907,7 @@
             // 
             this.treeView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeView3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.treeView3.LineColor = System.Drawing.Color.Empty;
             this.treeView3.Location = new System.Drawing.Point(0, 29);
             this.treeView3.Name = "treeView3";
             this.treeView3.Size = new System.Drawing.Size(214, 55);
@@ -927,42 +955,6 @@
             this.kryptonCheckButton11.TabIndex = 6;
             this.kryptonCheckButton11.Values.Image = global::Ocular.Properties.Resources.sort_columns;
             this.kryptonCheckButton11.Values.Text = "";
-            // 
-            // kryptonHeaderGroup3
-            // 
-            this.kryptonHeaderGroup3.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
-            this.buttonSpecHeaderGroup5,
-            this.buttonSpecHeaderGroup6});
-            this.kryptonHeaderGroup3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(1, 0);
-            this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
-            this.kryptonHeaderGroup3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            // 
-            // kryptonHeaderGroup3.Panel
-            // 
-            this.kryptonHeaderGroup3.Panel.Controls.Add(this.panel9);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(216, 177);
-            this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup3.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
-            this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Back.ColorStyle = ComponentFactory.Krypton.Toolkit.PaletteColorStyle.RoundedTopLight;
-            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup3.TabIndex = 17;
-            this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Insert";
-            this.kryptonHeaderGroup3.ValuesPrimary.Image = null;
-            // 
-            // buttonSpecHeaderGroup5
-            // 
-            this.buttonSpecHeaderGroup5.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.PinHorizontal;
-            this.buttonSpecHeaderGroup5.UniqueName = "5A9418180214464E1BA8F7C86E24FF89";
-            // 
-            // buttonSpecHeaderGroup6
-            // 
-            this.buttonSpecHeaderGroup6.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Close;
-            this.buttonSpecHeaderGroup6.UniqueName = "C155949832F44A8EC09A46BB16BE78EC";
             // 
             // panel9
             // 
@@ -1047,15 +1039,6 @@
             this.kryptonDropButton1.Splitter = false;
             this.kryptonDropButton1.TabIndex = 0;
             this.kryptonDropButton1.Values.Text = "Common";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.LightGray;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 575);
-            this.panel4.TabIndex = 20;
             // 
             // ToolbarSeperator
             // 
@@ -1338,36 +1321,32 @@
             this.Text = "Document";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.scintilla1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fastTxt)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).EndInit();
-            this.kryptonHeaderGroup2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).EndInit();
             this.kryptonHeaderGroup2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
             this.kryptonHeaderGroup1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5.Panel)).EndInit();
-            this.kryptonHeaderGroup5.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5)).EndInit();
             this.kryptonHeaderGroup5.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4.Panel)).EndInit();
-            this.kryptonHeaderGroup4.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4)).EndInit();
             this.kryptonHeaderGroup4.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).EndInit();
-            this.kryptonHeaderGroup3.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).EndInit();
             this.kryptonHeaderGroup3.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -1486,7 +1465,8 @@
             private System.Windows.Forms.Panel panel17;
             private System.Windows.Forms.Panel panel5;
             private System.Windows.Forms.Panel panel4;
-            public ScintillaNET.Scintilla scintilla1;
+            //public ScintillaNET.Scintilla scintilla1;
+            public FastColoredTextBoxNS.FastColoredTextBox fastTxt;
         }
     }
 }
