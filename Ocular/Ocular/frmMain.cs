@@ -79,7 +79,7 @@ namespace Ocular
         }
 
         //New File
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        private void newFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.docSettings.AddDocument(tabControl1, "Untitled", "Untitled");
         }
@@ -96,5 +96,7 @@ namespace Ocular
             FileOpenSave open = new FileOpenSave();
             open.SaveFileAs();
         }
+
+
     }
 }

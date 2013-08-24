@@ -295,6 +295,36 @@
   <ItemGroup>
     <None Include="Resources\tab_close_hover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_white_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_explore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ftp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_go1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

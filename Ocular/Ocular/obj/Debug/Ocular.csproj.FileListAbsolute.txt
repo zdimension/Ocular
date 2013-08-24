@@ -43,3 +43,14 @@ C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.frmMain.resou
 C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.Document.frmDocument.resources
 C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
 C:\Users\Master Ro\Documents\Ocular\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe.config
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.exe
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\Ocular.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\MdiTabControl.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.csprojResolveAssemblyReference.cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.frmMain.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.Document.frmDocument.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.Properties.Resources.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.exe
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.pdb
