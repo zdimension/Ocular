@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ocular
 {
-    class Tag
+    public class Tag
     {
         public string Name;
         public string tag;
