@@ -11,19 +11,17 @@ namespace Ocular
 {
     public class ScintillaAutoComplete
     {
-        private readonly List<string> keywords;
+        private readonly List<Tag> k;
 
         public ScintillaAutoComplete()
         {
-            keywords = new List<string>();
+            k = new List<Tag>();
 
             //HTML Keywords
             //Feel free to add more
-            keywords.Add(HTMLTags.button);
+            /*keywords.Add(HTMLTags.button);
             keywords.Add(HTMLTags.code);
-            keywords.Add(HTMLTags.font);
             keywords.Add(HTMLTags.form);
-            keywords.Add(HTMLTags.h);
             keywords.Add(HTMLTags.h1);
             keywords.Add(HTMLTags.h2);
             keywords.Add(HTMLTags.h3);
@@ -37,7 +35,10 @@ namespace Ocular
             keywords.Add(HTMLTags.link);
             keywords.Add(HTMLTags.href);
             keywords.Add(HTMLTags.src);
-            keywords.Add(HTMLTags.title);
+            keywords.Add(HTMLTags.title);*/
+
+            k.Add(HTMLTags.a);
+            k.Add(HTMLTags.abbr);
         }
 
         public void EnableAutoComplete(bool enable, Scintilla scintilla)
@@ -60,7 +61,7 @@ namespace Ocular
             int caretPosition = scintilla.Caret.Position;
             string currentWord = scintilla.GetWordFromPosition(caretPosition);
 
-            var wordStartsWith = keywords.Where(x => x.StartsWith(currentWord));
+            var wordStartsWith = k.Where(x => x.tag.StartsWith(currentWord));
 
             string LOCkeywords = "";
 

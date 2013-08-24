@@ -32,7 +32,7 @@ namespace Ocular
         {
             get
             {
-                return docSettings.DocsOpen[tabControl1.TabPages.SelectedIndex()].scintilla1;
+                return docSettings.DocsOpen[tbxMain.TabPages.SelectedIndex()].scintilla1;
             }
         }
 
@@ -40,7 +40,7 @@ namespace Ocular
         {
             get
             {
-                return tabControl1;
+                return tbxMain;
             }
         }
 
@@ -49,12 +49,12 @@ namespace Ocular
         public frmMain()
         {
             InitializeComponent();
-            tabControl1.GetTabRegion += new MdiTabControl.TabControl.GetTabRegionEventHandler(TabControl1_GetTabRegion);
+            tbxMain.GetTabRegion += new MdiTabControl.TabControl.GetTabRegionEventHandler(TabControl1_GetTabRegion);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.docSettings.AddDocument(tabControl1, "Untitled", "Untitled");
+            this.docSettings.AddDocument(tbxMain, "Untitled", "Untitled");
         }
               
         private void TabControl1_GetTabRegion(object sender, MdiTabControl.TabControl.GetTabRegionEventArgs e)
@@ -81,14 +81,14 @@ namespace Ocular
         //New File
         private void newFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.docSettings.AddDocument(tabControl1, "Untitled", "Untitled");
+            this.docSettings.AddDocument(tbxMain, "Untitled", "Untitled");
         }
 
         //Open File
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FileOpenSave open = new FileOpenSave();
-            open.OpenFile(tabControl1);
+            open.OpenFile(tbxMain);
         }
 
         private void saveFileAsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -90,6 +90,7 @@
     <Compile Include="frmDocument.Designer.cs">
       <DependentUpon>frmDocument.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tag.cs" />
     <Compile Include="HTMLTags.cs" />
     <Compile Include="OcularSyntaxHighlighting.cs" />
     <Compile Include="Program.cs" />
@@ -324,6 +325,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\page_go1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textfield_rename.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
