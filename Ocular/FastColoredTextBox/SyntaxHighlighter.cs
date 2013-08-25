@@ -456,10 +456,26 @@ namespace FastColoredTextBoxNS
 
         #endregion
 
-        public void InitStyleSchema(Language lang)
+        public Style NormalTextStyle = new TextStyle(new SolidBrush(Color.FromArgb(248, 248, 242)), null, FontStyle.Regular);
+        public Style StringTextStyle = new TextStyle(new SolidBrush(Color.FromArgb(230, 219, 116)), null, FontStyle.Regular);
+        public Style KeywordTextStyle = new TextStyle(new SolidBrush(Color.FromArgb(249, 38, 114)), null, FontStyle.Regular);
+        public Style ClassOrAttributeNameStyle = new TextStyle(new SolidBrush(Color.FromArgb(166, 226, 46)), null, FontStyle.Regular);
+        public Style NumberTextStyle = new TextStyle(new SolidBrush(Color.FromArgb(174, 129, 255)), null, FontStyle.Regular);
+        public Style CommentTextStyle = new TextStyle(new SolidBrush(Color.FromArgb(117, 113, 94)), null, FontStyle.Regular);
+        public Style Keyword2TextStyle = new TextStyle(new SolidBrush(Color.FromArgb(102, 217, 239)), null, FontStyle.Regular);
+
+        /*public void InitStyleSchema(Language lang)
         {
             switch (lang)
             {
+                case Language.HTML:
+                    CommentStyle = GreenStyle;
+                    TagBracketStyle = BlueStyle;
+                    TagNameStyle = MaroonStyle;
+                    AttributeStyle = RedStyle;
+                    AttributeValueStyle = BlueStyle;
+                    HtmlEntityStyle = RedStyle;
+                    break;
                 case Language.CSharp:
                     StringStyle = BrownStyle;
                     CommentStyle = GreenStyle;
@@ -476,14 +492,7 @@ namespace FastColoredTextBoxNS
                     ClassNameStyle = BoldStyle;
                     KeywordStyle = BlueStyle;
                     break;
-                case Language.HTML:
-                    CommentStyle = GreenStyle;
-                    TagBracketStyle = BlueStyle;
-                    TagNameStyle = MaroonStyle;
-                    AttributeStyle = RedStyle;
-                    AttributeValueStyle = BlueStyle;
-                    HtmlEntityStyle = RedStyle;
-                    break;
+                
                 case Language.JS:
                     StringStyle = BrownStyle;
                     CommentStyle = GreenStyle;
@@ -504,6 +513,65 @@ namespace FastColoredTextBoxNS
                     StringStyle = RedStyle;
                     CommentStyle = GreenStyle;
                     NumberStyle = MagentaStyle;
+                    KeywordStyle = BlueStyle;
+                    StatementsStyle = BlueBoldStyle;
+                    FunctionsStyle = MaroonStyle;
+                    VariableStyle = MaroonStyle;
+                    TypesStyle = BrownStyle;
+                    break;
+            }
+        }*/
+
+        public void InitStyleSchema(Language lang)
+        {
+            switch (lang)
+            {
+                case Language.HTML:
+                    CommentStyle = CommentTextStyle;
+                    TagBracketStyle = NormalTextStyle;
+                    TagNameStyle = KeywordTextStyle;
+                    AttributeStyle = ClassOrAttributeNameStyle;
+                    AttributeValueStyle = StringTextStyle;
+                    HtmlEntityStyle = RedStyle;
+                    NumberStyle = NumberTextStyle;
+                    break;
+                case Language.CSharp:
+                    StringStyle = StringTextStyle;
+                    CommentStyle = CommentTextStyle;
+                    NumberStyle = NumberTextStyle;
+                    AttributeStyle = GreenStyle;
+                    ClassNameStyle = BoldStyle;
+                    KeywordStyle = BlueStyle;
+                    CommentTagStyle = GrayStyle;
+                    break;
+                case Language.VB:
+                    StringStyle = StringTextStyle;
+                    CommentStyle = CommentTextStyle;
+                    NumberStyle = NumberTextStyle;
+                    ClassNameStyle = BoldStyle;
+                    KeywordStyle = BlueStyle;
+                    break;
+
+                case Language.JS:
+                    StringStyle = StringTextStyle;
+                    CommentStyle = CommentTextStyle;
+                    NumberStyle = NumberTextStyle;
+                    KeywordStyle = BlueStyle;
+                    KeywordStyle = BlueStyle;
+                    break;
+                case Language.PHP:
+                    StringStyle = StringTextStyle;
+                    CommentStyle = CommentTextStyle;
+                    NumberStyle = NumberTextStyle;
+                    VariableStyle = MaroonStyle;
+                    KeywordStyle = Keyword2TextStyle;
+                    KeywordStyle2 = KeywordTextStyle;
+                    KeywordStyle3 = GrayStyle;
+                    break;
+                case Language.SQL:
+                    StringStyle = StringTextStyle;
+                    CommentStyle = CommentTextStyle;
+                    NumberStyle = NumberTextStyle;
                     KeywordStyle = BlueStyle;
                     StatementsStyle = BlueBoldStyle;
                     FunctionsStyle = MaroonStyle;

@@ -96,6 +96,7 @@
     <Compile Include="frmDocument.Designer.cs">
       <DependentUpon>frmDocument.cs</DependentUpon>
     </Compile>
+    <Compile Include="OcularSyntaxHighlighter.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="HTMLTags.cs" />
     <Compile Include="OcularSyntaxHighlighting.cs" />

@@ -50,6 +50,16 @@ namespace Ocular
                 FileOpenSave quickSave = new FileOpenSave();
                 quickSave.QuickFileSaveAs();
             }
+
+            public OcularSyntaxHighlighter Highlighter = new OcularSyntaxHighlighter();
+
+            private void fastTxt_TextChanged(object sender, FastColoredTextBoxNS.TextChangedEventArgs e)
+            {
+                if (fastTxt.Language == FastColoredTextBoxNS.Language.HTML)
+                {
+                    Highlighter.HTMLSyntaxHighlight(e.ChangedRange);
+                }
+            }
         }
     }
 }

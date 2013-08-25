@@ -1,4 +1,5 @@
-﻿namespace Ocular
+﻿using System.Drawing;
+namespace Ocular
 {
     namespace Document
     {
@@ -186,23 +187,36 @@
             // 
             // fastTxt
             // 
-            this.fastTxt.AutoScrollMinSize = new System.Drawing.Size(25, 15);
+            this.fastTxt.AutoScrollMinSize = new System.Drawing.Size(46, 15);
             this.fastTxt.BackBrush = null;
+            this.fastTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
+            this.fastTxt.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(240)))));
             this.fastTxt.CharHeight = 15;
             this.fastTxt.CharWidth = 7;
+            this.fastTxt.CommentPrefix = null;
             this.fastTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fastTxt.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.fastTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fastTxt.Font = new System.Drawing.Font("Consolas", 9F);
+            this.fastTxt.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.fastTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.fastTxt.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
             this.fastTxt.IsReplaceMode = false;
             this.fastTxt.Language = FastColoredTextBoxNS.Language.HTML;
+            this.fastTxt.LeftBracket = '<';
+            this.fastTxt.LeftBracket2 = '(';
             this.fastTxt.Location = new System.Drawing.Point(0, 23);
             this.fastTxt.Name = "fastTxt";
+            this.fastTxt.PaddingBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
             this.fastTxt.Paddings = new System.Windows.Forms.Padding(0);
-            this.fastTxt.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.fastTxt.RightBracket = '>';
+            this.fastTxt.RightBracket2 = ')';
+            this.fastTxt.SelectionColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(73)))), ((int)(((byte)(72)))), ((int)(((byte)(62)))));
+            this.fastTxt.ServiceLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
             this.fastTxt.Size = new System.Drawing.Size(589, 526);
             this.fastTxt.TabIndex = 0;
+            this.fastTxt.Text = "ggg";
             this.fastTxt.Zoom = 100;
+            this.fastTxt.TextChanged += new System.EventHandler<FastColoredTextBoxNS.TextChangedEventArgs>(this.fastTxt_TextChanged);
             // 
             // panel18
             // 

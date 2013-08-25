@@ -29,6 +29,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using Microsoft.Win32;
 using Timer = System.Windows.Forms.Timer;
+using System.Drawing.Text;
 
 namespace FastColoredTextBoxNS
 {
@@ -4115,7 +4116,7 @@ namespace FastColoredTextBoxNS
             return needSpaces;
         }
 
-        internal virtual void CalcAutoIndentShiftByCodeFolding(object sender, AutoIndentEventArgs args)
+        public /*virtual*/ void CalcAutoIndentShiftByCodeFolding(object sender, AutoIndentEventArgs args)
         {
             //inset TAB after start folding marker
             if (string.IsNullOrEmpty(lines[args.iLine].FoldingEndMarker) &&
@@ -4247,7 +4248,10 @@ namespace FastColoredTextBoxNS
             var sw = Stopwatch.StartNew();
 #endif
             visibleMarkers.Clear();
+            /*e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.TextRenderingHint = TextRenderingHint.AntiAlias;*/
             e.Graphics.SmoothingMode = SmoothingMode.HighQuality;
+            e.Graphics.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
             
             //
             var servicePen = new Pen(ServiceLinesColor);
@@ -4343,6 +4347,10 @@ namespace FastColoredTextBoxNS
                                                        new Rectangle(LeftIndent, y, Width,
                                                                      CharHeight*lineInfo.WordWrapStringsCount),
                                                        e.Graphics, e.ClipRectangle));
+
+                e.Graphics.TextRenderingHint = TextRenderingHint.AntiAlias;
+                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
                 //draw line number
                 if (ShowLineNumbers)
                     using (var lineNumberBrush = new SolidBrush(LineNumberColor))
