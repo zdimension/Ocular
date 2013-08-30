@@ -64,6 +64,8 @@ namespace Ocular
         {
             this.docSettings.AddDocument(tbxMain, "Untitled", "Untitled");
             showLineNumbersToolStripMenuItem.Checked = CurrentBox.ShowLineNumbers;
+
+            frmMain_SizeChanged(sender, e);
         }
               
         private void TabControl1_GetTabRegion(object sender, MdiTabControl.TabControl.GetTabRegionEventArgs e)
@@ -106,6 +108,12 @@ namespace Ocular
         {
             FileOpenSave open = new FileOpenSave();
             open.SaveFileAs();
+        }
+
+        private void frmMain_SizeChanged(object sender, EventArgs e)
+        {
+            System.Drawing.Size sz = docSettings.DocsOpen[tbxMain.TabPages.SelectedIndex()].Size;
+            lblViewSize.Text = sz.Width + "x" + sz.Height;
         }
 
 

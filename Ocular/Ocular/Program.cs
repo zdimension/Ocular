@@ -23,5 +23,7 @@ namespace Ocular
         //So we can access contents from other classes without having to instantiate new objects everytime
         public static frmMain mainForm;
         public static Ocular.Document.frmDocument documentForm;
+
+        public static LanguageHelper Helper = new LanguageHelper();
     }
 }

@@ -745,6 +745,7 @@ namespace FastColoredTextBoxNS
             //clear folding markers
             range.ClearFoldingMarkers();
             //set folding markers
+            range.SetFoldingMarkers("<html", "</html>", RegexOptions.IgnoreCase);
             range.SetFoldingMarkers("<head", "</head>", RegexOptions.IgnoreCase);
             range.SetFoldingMarkers("<body", "</body>", RegexOptions.IgnoreCase);
             range.SetFoldingMarkers("<table", "</table>", RegexOptions.IgnoreCase);

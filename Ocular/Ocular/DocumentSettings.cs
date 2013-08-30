@@ -59,7 +59,7 @@ namespace Ocular
                 tabControl.TabPages.Add(document);
                 this.docsOpen.Add(document);
 
-                index = tabControl.TabPages.get_IndexOf(document);
+                index = tabControl.TabPages.IndexOf(document);
 
                 tabControl.TabIndex = index;
             }

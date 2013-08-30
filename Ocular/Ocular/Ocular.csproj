@@ -62,10 +62,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
-    <Reference Include="MdiTabControl, Version=1.1.4819.10821, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Resources\References\MdiTabControl.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="ScintillaNET">
       <HintPath>..\..\..\ScintillaNET\ScintillaNET.dll</HintPath>
@@ -96,6 +92,8 @@
     <Compile Include="frmDocument.Designer.cs">
       <DependentUpon>frmDocument.cs</DependentUpon>
     </Compile>
+    <Compile Include="LanguageHelper.cs" />
+    <Compile Include="LoremIpsum.cs" />
     <Compile Include="OcularSyntaxHighlighter.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="HTMLTags.cs" />
@@ -358,6 +356,10 @@
     <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
       <Project>{6DD14A85-CCFC-4774-BD26-0F5772512319}</Project>
       <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDITabControl\MdiTabControl.csproj">
+      <Project>{3BB8CE7C-372E-4A35-8183-EF3E3EB8F308}</Project>
+      <Name>MdiTabControl</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

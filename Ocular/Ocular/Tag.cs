@@ -22,5 +22,14 @@ namespace Ocular
             : this(tag, tag, description)
         {
         }
+
+        /*public Tag()
+        {
+
+        }*/
+
+        static Tag()
+        {
+        }
     }
 }

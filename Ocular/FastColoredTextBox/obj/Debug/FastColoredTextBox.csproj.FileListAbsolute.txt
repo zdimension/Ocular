@@ -1,4 +1,3 @@
-C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\bin\Debug\FastColoredTextBox.dll
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\bin\Debug\FastColoredTextBox.pdb
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
@@ -9,3 +8,5 @@ C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\Debug\FastColoredTextBox.csproj.GenerateResource.Cache
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\Debug\FastColoredTextBox.dll
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\Debug\FastColoredTextBox.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\obj\Debug\FastColoredTextBox.csprojResolveAssemblyReference.cache
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\FastColoredTextBox\bin\Debug\FastColoredTextBox.XML
