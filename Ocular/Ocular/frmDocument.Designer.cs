@@ -33,8 +33,8 @@ namespace Ocular
             {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocument));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
+            this.panel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel16 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSplitButton4 = new System.Windows.Forms.ToolStripSplitButton();
@@ -54,22 +54,22 @@ namespace Ocular
             this.toolStripButton24 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton25 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton26 = new System.Windows.Forms.ToolStripButton();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel6 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel7 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel8 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.kryptonCheckButton5 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton4 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -77,7 +77,7 @@ namespace Ocular
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonCheckButton2 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton1 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup9 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup10 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
@@ -87,8 +87,8 @@ namespace Ocular
             this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup6 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel11 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton17 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton16 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton14 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -97,20 +97,20 @@ namespace Ocular
             this.kryptonCheckButton7 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton6 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.panel13 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton12 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.panel15 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.treeView3 = new System.Windows.Forms.TreeView();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel14 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton9 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton10 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.kryptonCheckButton11 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel9 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonCheckButton13 = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel10 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonListView1 = new AC.ExtendedRenderer.Toolkit.KryptonListView();
             this.kryptonDropButton1 = new ComponentFactory.Krypton.Toolkit.KryptonDropButton();
             this.ToolbarSeperator = new System.Windows.Forms.Panel();
@@ -141,9 +141,13 @@ namespace Ocular
             this.toolStripSplitButton6 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.fastTxt = new FastColoredTextBoxNS.FastColoredTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.panel3)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel16)).BeginInit();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel6)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).BeginInit();
@@ -151,7 +155,11 @@ namespace Ocular
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel7)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5.Panel)).BeginInit();
@@ -162,9 +170,17 @@ namespace Ocular
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).BeginInit();
             this.kryptonHeaderGroup3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel11)).BeginInit();
             this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel13)).BeginInit();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel9)).BeginInit();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel10)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastTxt)).BeginInit();
             this.SuspendLayout();
@@ -425,6 +441,7 @@ namespace Ocular
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 33);
             this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(4);
             this.panel1.Size = new System.Drawing.Size(175, 575);
             this.panel1.TabIndex = 16;
             // 
@@ -435,10 +452,10 @@ namespace Ocular
             this.buttonSpecHeaderGroup4});
             this.kryptonHeaderGroup2.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderGroup2.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(0, 216);
+            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(4, 220);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             this.kryptonHeaderGroup2.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(174, 216);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(166, 216);
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup2.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -467,10 +484,10 @@ namespace Ocular
             this.buttonSpecHeaderGroup2});
             this.kryptonHeaderGroup1.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(0, 0);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(4, 4);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             this.kryptonHeaderGroup1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(174, 216);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(166, 216);
             this.kryptonHeaderGroup1.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup1.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -496,9 +513,9 @@ namespace Ocular
             // 
             this.panel5.BackColor = System.Drawing.Color.LightGray;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(174, 0);
+            this.panel5.Location = new System.Drawing.Point(170, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1, 575);
+            this.panel5.Size = new System.Drawing.Size(1, 567);
             this.panel5.TabIndex = 21;
             // 
             // panel7
@@ -608,6 +625,7 @@ namespace Ocular
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(764, 33);
             this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(4);
             this.panel2.Size = new System.Drawing.Size(217, 575);
             this.panel2.TabIndex = 17;
             // 
@@ -618,10 +636,10 @@ namespace Ocular
             this.buttonSpecHeaderGroup10});
             this.kryptonHeaderGroup5.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderGroup5.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup5.Location = new System.Drawing.Point(1, 284);
+            this.kryptonHeaderGroup5.Location = new System.Drawing.Point(5, 288);
             this.kryptonHeaderGroup5.Name = "kryptonHeaderGroup5";
             this.kryptonHeaderGroup5.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup5.Size = new System.Drawing.Size(216, 216);
+            this.kryptonHeaderGroup5.Size = new System.Drawing.Size(208, 216);
             this.kryptonHeaderGroup5.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup5.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -650,10 +668,10 @@ namespace Ocular
             this.buttonSpecHeaderGroup8});
             this.kryptonHeaderGroup4.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderGroup4.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup4.Location = new System.Drawing.Point(1, 177);
+            this.kryptonHeaderGroup4.Location = new System.Drawing.Point(5, 181);
             this.kryptonHeaderGroup4.Name = "kryptonHeaderGroup4";
             this.kryptonHeaderGroup4.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(216, 107);
+            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(208, 107);
             this.kryptonHeaderGroup4.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup4.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -682,10 +700,10 @@ namespace Ocular
             this.buttonSpecHeaderGroup6});
             this.kryptonHeaderGroup3.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(1, 0);
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(5, 4);
             this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
             this.kryptonHeaderGroup3.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(216, 177);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(208, 177);
             this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup3.StateCommon.Border.Color2 = System.Drawing.Color.Gainsboro;
             this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -711,9 +729,9 @@ namespace Ocular
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Location = new System.Drawing.Point(4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1, 575);
+            this.panel4.Size = new System.Drawing.Size(1, 567);
             this.panel4.TabIndex = 20;
             // 
             // panel11
@@ -1276,6 +1294,7 @@ namespace Ocular
             this.fastTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fastTxt.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.fastTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.fastTxt.Hotkeys = resources.GetString("fastTxt.Hotkeys");
             this.fastTxt.IndentBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(34)))));
             this.fastTxt.IsReplaceMode = false;
             this.fastTxt.Language = FastColoredTextBoxNS.Language.HTML;
@@ -1297,7 +1316,7 @@ namespace Ocular
             // 
             // frmDocument
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(981, 608);
@@ -1306,16 +1325,21 @@ namespace Ocular
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.ToolbarSeperator);
             this.Controls.Add(this.toolStrip1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDocument";
             this.Text = "Document";
             this.Load += new System.EventHandler(this.frmDocument_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.panel3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel16)).EndInit();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel6)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).EndInit();
@@ -1323,8 +1347,12 @@ namespace Ocular
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
             this.kryptonHeaderGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel7)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup5)).EndInit();
@@ -1335,9 +1363,17 @@ namespace Ocular
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).EndInit();
             this.kryptonHeaderGroup3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel11)).EndInit();
             this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel13)).EndInit();
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel9)).EndInit();
             this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panel10)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fastTxt)).EndInit();
@@ -1347,19 +1383,19 @@ namespace Ocular
 
             #endregion
 
-            private System.Windows.Forms.Panel panel3;
-            private System.Windows.Forms.Panel panel6;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel3;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel6;
             private System.Windows.Forms.StatusStrip statusStrip1;
             private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
             private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
             private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
             private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-            private System.Windows.Forms.Panel panel1;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel1;
             private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup2;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup3;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup4;
-            private System.Windows.Forms.Panel panel7;
-            private System.Windows.Forms.Panel panel8;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel7;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel8;
             private System.Windows.Forms.TreeView treeView1;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton5;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton4;
@@ -1370,20 +1406,20 @@ namespace Ocular
             private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup1;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup2;
-            private System.Windows.Forms.Panel panel2;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel2;
             private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup5;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup9;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup10;
-            private System.Windows.Forms.Panel panel11;
-            private System.Windows.Forms.Panel panel12;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel11;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel12;
             private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup4;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup7;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup8;
             private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup3;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup5;
             private ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup buttonSpecHeaderGroup6;
-            private System.Windows.Forms.Panel panel9;
-            private System.Windows.Forms.Panel panel10;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel9;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel10;
             private AC.ExtendedRenderer.Toolkit.KryptonListView kryptonListView1;
             private ComponentFactory.Krypton.Toolkit.KryptonDropButton kryptonDropButton1;
             private System.Windows.Forms.Panel ToolbarSeperator;
@@ -1412,10 +1448,10 @@ namespace Ocular
             private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton5;
             private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton6;
             private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-            private System.Windows.Forms.Panel panel13;
-            private System.Windows.Forms.Panel panel15;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel13;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel15;
             private System.Windows.Forms.TreeView treeView3;
-            private System.Windows.Forms.Panel panel14;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel14;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton9;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton10;
             private ComponentFactory.Krypton.Toolkit.KryptonCheckButton kryptonCheckButton11;
@@ -1451,9 +1487,9 @@ namespace Ocular
             private System.Windows.Forms.ToolStripButton toolStripButton26;
             private System.Windows.Forms.ToolStripSplitButton toolStripSplitButton4;
             private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-            private System.Windows.Forms.Panel panel16;
-            private System.Windows.Forms.Panel panel5;
-            private System.Windows.Forms.Panel panel4;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel16;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel5;
+            private ComponentFactory.Krypton.Toolkit.KryptonPanel panel4;
             //public ScintillaNET.Scintilla scintilla1;
             public FastColoredTextBoxNS.FastColoredTextBox fastTxt;
         }

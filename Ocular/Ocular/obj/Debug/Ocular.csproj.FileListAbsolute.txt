@@ -54,7 +54,9 @@ C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.csproj.GenerateResource.Cache
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.exe
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\Ocular.pdb
-C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.dll
-C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.pdb
-C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\FastColoredTextBox.xml
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\bin\Debug\MdiTabControl.dll
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\FastColoredTextBoxNS.FastColoredTextBox.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\FastColoredTextBoxNS.FindForm.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\FastColoredTextBoxNS.GoToForm.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\FastColoredTextBoxNS.HotkeysEditorForm.resources
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\Ocular\obj\Debug\FastColoredTextBoxNS.ReplaceForm.resources

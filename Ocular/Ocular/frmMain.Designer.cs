@@ -62,9 +62,21 @@
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.codeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showLineNumbersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.splitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.designToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderTop = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderBottom = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderLeft = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderRight = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderInner = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuBorderOutter = new System.Windows.Forms.ToolStripMenuItem();
             this.projectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sVNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -596,6 +608,7 @@
             this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.closeToolStripMenuItem.Text = "&Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // closewithoutSavingToolStripMenuItem
             // 
@@ -681,10 +694,22 @@
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showLineNumbersToolStripMenuItem});
+            this.codeToolStripMenuItem,
+            this.showLineNumbersToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.splitToolStripMenuItem,
+            this.toolStripSeparator9,
+            this.designToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "&View";
+            // 
+            // codeToolStripMenuItem
+            // 
+            this.codeToolStripMenuItem.Image = global::Ocular.Properties.Resources.page_code;
+            this.codeToolStripMenuItem.Name = "codeToolStripMenuItem";
+            this.codeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codeToolStripMenuItem.Text = "&Code";
             // 
             // showLineNumbersToolStripMenuItem
             // 
@@ -692,6 +717,29 @@
             this.showLineNumbersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showLineNumbersToolStripMenuItem.Text = "Show Line Numbers";
             this.showLineNumbersToolStripMenuItem.Click += new System.EventHandler(this.showLineNumbersToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(177, 6);
+            // 
+            // splitToolStripMenuItem
+            // 
+            this.splitToolStripMenuItem.Name = "splitToolStripMenuItem";
+            this.splitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.splitToolStripMenuItem.Text = "&Split";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(177, 6);
+            // 
+            // designToolStripMenuItem
+            // 
+            this.designToolStripMenuItem.Image = global::Ocular.Properties.Resources.page;
+            this.designToolStripMenuItem.Name = "designToolStripMenuItem";
+            this.designToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.designToolStripMenuItem.Text = "&Design";
             // 
             // insertToolStripMenuItem
             // 
@@ -701,9 +749,64 @@
             // 
             // formatToolStripMenuItem
             // 
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bordersToolStripMenuItem});
             this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
             this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.formatToolStripMenuItem.Text = "&Format";
+            // 
+            // bordersToolStripMenuItem
+            // 
+            this.bordersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuBorderTop,
+            this.mnuBorderBottom,
+            this.mnuBorderLeft,
+            this.mnuBorderRight,
+            this.mnuBorderInner,
+            this.mnuBorderOutter});
+            this.bordersToolStripMenuItem.Name = "bordersToolStripMenuItem";
+            this.bordersToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bordersToolStripMenuItem.Text = "&Borders";
+            // 
+            // mnuBorderTop
+            // 
+            this.mnuBorderTop.Image = global::Ocular.Properties.Resources.border_2_top;
+            this.mnuBorderTop.Name = "mnuBorderTop";
+            this.mnuBorderTop.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderTop.Text = "&Top";
+            // 
+            // mnuBorderBottom
+            // 
+            this.mnuBorderBottom.Image = global::Ocular.Properties.Resources.border_2_bottom;
+            this.mnuBorderBottom.Name = "mnuBorderBottom";
+            this.mnuBorderBottom.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderBottom.Text = "&Bottom";
+            // 
+            // mnuBorderLeft
+            // 
+            this.mnuBorderLeft.Image = global::Ocular.Properties.Resources.border_2_left;
+            this.mnuBorderLeft.Name = "mnuBorderLeft";
+            this.mnuBorderLeft.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderLeft.Text = "&Left";
+            // 
+            // mnuBorderRight
+            // 
+            this.mnuBorderRight.Image = global::Ocular.Properties.Resources.border_2_right;
+            this.mnuBorderRight.Name = "mnuBorderRight";
+            this.mnuBorderRight.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderRight.Text = "&Right";
+            // 
+            // mnuBorderInner
+            // 
+            this.mnuBorderInner.Name = "mnuBorderInner";
+            this.mnuBorderInner.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderInner.Text = "&Inner";
+            // 
+            // mnuBorderOutter
+            // 
+            this.mnuBorderOutter.Name = "mnuBorderOutter";
+            this.mnuBorderOutter.Size = new System.Drawing.Size(152, 22);
+            this.mnuBorderOutter.Text = "&Outter";
             // 
             // projectToolStripMenuItem
             // 
@@ -975,6 +1078,18 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel;
+        private System.Windows.Forms.ToolStripMenuItem codeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem splitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem designToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderTop;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderBottom;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderLeft;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderRight;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderInner;
+        private System.Windows.Forms.ToolStripMenuItem mnuBorderOutter;
     }
 }
 

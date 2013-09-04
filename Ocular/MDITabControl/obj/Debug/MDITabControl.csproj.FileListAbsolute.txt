@@ -4,3 +4,4 @@ C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\MDITabControl\bin\Debug
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\MDITabControl\bin\Debug\MdiTabControl.pdb
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\MDITabControl\obj\Debug\MdiTabControl.dll
 C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\MDITabControl\obj\Debug\MdiTabControl.pdb
+C:\Users\Tom2\Documents\1-Documents\Ocular\ocular\Ocular\MDITabControl\obj\Debug\MdiTabControl.csprojResolveAssemblyReference.cache

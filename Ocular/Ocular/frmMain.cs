@@ -97,6 +97,10 @@ namespace Ocular
             this.docSettings.AddDocument(tbxMain, "Untitled", "Untitled");
         }
 
+        public void newTab(string title, Language lng, string content)
+        {
+        }
+
         //Open File
         private void openFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -114,6 +118,11 @@ namespace Ocular
         {
             System.Drawing.Size sz = docSettings.DocsOpen[tbxMain.TabPages.SelectedIndex()].Size;
             lblViewSize.Text = sz.Width + "x" + sz.Height;
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
 

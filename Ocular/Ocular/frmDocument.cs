@@ -36,12 +36,31 @@ namespace Ocular
 
             #endregion
 
+            public List<AutocompleteItem> HTMLAutocomplete = new List<AutocompleteItem>();
+
             public frmDocument()
             {
                 InitializeComponent();
 
+                //fastTxt.SyntaxHighlighter = new SyntaxHighlighter();
+
                 popupMenu = new AutocompleteMenu(fastTxt);
                 popupMenu.MinFragmentLength = 1;
+
+                if (fastTxt.Language == Language.HTML)
+                {
+                    foreach (Tag t in Program.Helper.Tags)
+                    {
+                        AutocompleteItem it = new AutocompleteItem(t.Name, -1, t.tag, t.Name, t.Description);
+                        HTMLAutocomplete.Add(it);
+                    }
+
+                    popupMenu.Items.sourceItems = HTMLAutocomplete;
+
+                }
+
+                popupMenu.Items.MaximumSize = new System.Drawing.Size(200, 300);
+                popupMenu.Items.Width = 200;
             }
 
             private void scintilla1_CharAdded(object sender, ScintillaNET.CharAddedEventArgs e)
